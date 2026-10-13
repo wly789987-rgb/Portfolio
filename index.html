@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080c12">
+  <meta name="description" content="王立焱的 Unity 技术美术作品集。实时渲染、Shader、VFX、VR 场景与 AI 视觉工作流。">
+  <title>王立焱 / Unity 技术美术</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#works">跳到作品</a>
+  <header class="header">
+    <a class="brand" href="#" aria-label="王立焱首页"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M3 7 9 25 16 10 23 25 29 7M9 25h14"/></svg><span>王立焱 <small>Technical Artist</small></span></a>
+    <nav aria-label="主导航"><a href="#about">关于</a><a href="#works" data-nav-module="art">美术</a><a href="#technology" data-nav-module="technology">技术</a><a href="#expertise">技术栈</a></nav>
+    <a class="header-contact" href="#contact">建立联系 <span aria-hidden="true">↗</span></a>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Unity 技术美术 / 实时视觉探索</p>
+        <h1 id="hero-heading">让想象，<br>实时发生。</h1>
+        <p class="hero-en">Art in mind.<br><span>Realtime by design.</span></p>
+        <p class="hero-description">我是王立焱。连接美术表达与引擎实现，<br>在材质、特效与交互空间之间，构建可体验的视觉。</p>
+        <a class="button primary" href="#works">探索作品 <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="viewport" id="hero-viewport">
+        <div class="viewport-bar"><span><i></i> Realtime playground</span><span class="viewport-meta">视觉交互原型</span></div>
+        <canvas id="lab-canvas" aria-label="可交互的程序化波面视觉占位；不是 Unity 项目实机画面"></canvas>
+        <div class="viewport-cross cross-tl"></div><div class="viewport-cross cross-br"></div>
+        <div class="viewport-caption"><span>Wave field</span><small>程序化视觉占位 · 非项目实机</small></div>
+        <div class="viewport-controls"><div class="segmented" aria-label="视觉显示模式"><button type="button" class="active" data-mode="surface" aria-pressed="true">表面</button><button type="button" data-mode="wire" aria-pressed="false">线框</button></div><label>波幅 <input id="amplitude" type="range" min="0.3" max="1.5" step="0.1" value="0.9"></label><button class="icon-button" id="pause-motion" aria-label="暂停视觉动画" aria-pressed="false">暂停</button></div>
+      </div>
+      <div class="hero-bottom"><span>Unity · Shader · VFX · VR · AI</span><span>Selected work / 2023 — 2026</span><a href="#about">了解我 <span aria-hidden="true">↓</span></a></div>
+    </section>
+    <section class="section about" id="about" aria-labelledby="about-heading">
+      <div class="about-intro"><p class="eyebrow">About the artist</p><div class="profile-heading"><img id="profile-photo" class="profile-photo" width="96" height="120" alt="王立焱个人照片"><h2 id="about-heading">理解画面，<br>也理解它如何运行。</h2></div><p>数字媒体艺术背景，专注 Unity 技术美术与实时内容制作。工作覆盖角色与场景、材质与特效、交互逻辑，以及 AI 视觉工作流。</p><p>喜欢把一个视觉想法，推进到能够在引擎里被看见、被操作、被体验。</p><a id="download-resume" class="profile-download">下载简历 <span aria-hidden="true">↓</span></a><div class="about-sign">王立焱<span>Unity Technical Artist</span></div></div>
+      <div class="timeline"><h3>工作经历</h3><article><time>2026.06 — 至今</time><h4>U3D 内容制作人</h4><p>AILIAN 科技</p><span>Unity 游戏内容与交互实现，AI 识别接入，资产修正规范。</span></article><article><time>2025.04 — 2026.05</time><h4>Unity 开发工程师 · 技术美术方向</h4><p>林和伊文化传媒有限公司</p><span>大空间 VR 内容、渲染优化与 ComfyUI 工作流。</span></article><article><time>2024.07 — 2025.04</time><h4>Unity 技术美术</h4><p>杭州雪爪文化科技有限公司</p><span>元宇宙美术、换装系统、资产管理与 DCC 工具。</span></article><article><time>2023.08 — 2024.03</time><h4>AI 训练师 · 实习</h4><p>杭州雪爪文化科技有限公司</p><span>训练数据、样本质量与视觉 Demo 验证。</span></article></div>
+    </section>
+    <section class="section works" id="works" aria-labelledby="works-heading">
+      <div class="section-heading"><div><p class="eyebrow">从视觉到实现</p><h2 id="works-heading">作品与工具</h2></div><p><span id="module-description">角色、场景、卡牌与实时视觉表现。</span></p></div>
+      <div class="portfolio-modules" role="tablist" aria-label="作品模块"><button type="button" role="tab" id="art-tab" data-module="art" aria-selected="true" aria-controls="art-panel"><span><strong>美术</strong><small>视觉作品 / <span class="section-count">08</span> 个项目</small></span><span class="module-mark" aria-hidden="true">◇</span></button><button type="button" role="tab" id="technology-tab" data-module="technology" aria-selected="false" aria-controls="technology-panel" tabindex="-1"><span><strong>技术</strong><small>制作工具 / 工作流 / GitHub</small></span><span class="module-mark" aria-hidden="true">{ }</span></button></div>
+      <div id="art-panel" class="portfolio-panel" role="tabpanel" aria-labelledby="art-tab">
+      <div class="filter-bar" role="group" aria-label="筛选作品"><button class="active" data-filter="all" aria-pressed="true">全部作品 <span>8</span></button><button data-filter="render" aria-pressed="false">Shader / VFX</button><button data-filter="vr" aria-pressed="false">VR 空间</button><button data-filter="visual" aria-pressed="false">游戏与视觉</button><button data-filter="ai" aria-pressed="false">AI 交互</button></div>
+      <div id="project-grid" class="project-grid"></div>
+      <p class="archive-note"><span class="mini-cross">+</span> 项目画面整理自本地工程与旧站素材；部分展示图保留原作品集标注。素材可继续替换补充。</p>
+      </div>
+      <div id="technology-panel" class="portfolio-panel" role="tabpanel" aria-labelledby="technology-tab" hidden><div id="technology" class="technical-intro"><div><h3>制作工具与工作流 <span id="technical-count">04</span></h3><p>Blender、ComfyUI、Unity，以及更多创作辅助工具。</p></div><a id="technical-github" target="_blank" rel="noopener noreferrer" hidden>GitHub 主页 ↗</a></div><div id="tool-grid" class="tool-grid"></div><p id="tools-empty" class="technical-empty" hidden>工具内容待补充。</p><p class="technical-note">工具演示与仓库陆续补充。</p></div>
+    </section>
+    <section class="section expertise" id="expertise" aria-labelledby="expertise-heading">
+      <div class="section-heading"><div><p class="eyebrow">创作与实现之间</p><h2 id="expertise-heading">技术栈</h2></div><p>从 DCC 到引擎，<br>让视觉方案进入实时体验。</p></div>
+      <div class="expertise-grid">
+        <article><span class="tech-icon">{ }</span><h3>实时材质与特效</h3><p>自定义 Shader、风格化水体、天体效果与粒子系统。</p><div class="tags"><span>Shader</span><span>ASE</span><span>Particle System</span></div></article>
+        <article><span class="tech-icon">⌘</span><h3>Unity 与空间体验</h3><p>场景搭建、Timeline 动线、动画、UI 与 VR 设备调试。</p><div class="tags"><span>Unity / C#</span><span>Timeline</span><span>PICO</span></div></article>
+        <article><span class="tech-icon">◇</span><h3>资产与视觉工作流</h3><p>角色、道具与服饰制作，Mesh、UV、骨骼与动画修正规范。</p><div class="tags"><span>Blender</span><span>Substance Painter</span><span>DCC</span></div></article>
+        <article><span class="tech-icon">∿</span><h3>AI 内容与交互</h3><p>ComfyUI 工作流、模型调优、手势与卡牌识别，以及数字人语音接入。</p><div class="tags"><span>ComfyUI</span><span>AIGC</span><span>语音交互</span></div></article>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact"><div><p class="eyebrow">下一段实时体验</p><h2>一起，把想法<br>带进引擎。</h2></div><div class="contact-right"><p>欢迎交流 Unity 技术美术、实时视觉<br>与 AI 内容工作流。</p><a id="contact-link" class="button primary" hidden>发送邮件 <span aria-hidden="true">↗</span></a><p id="contact-pending" class="contact-pending">联系方式待补充</p><span class="contact-handle">@wangliyan</span></div></section>
+  </main>
+  <footer><span>© 2026 王立焱</span><span>Built for realtime ideas.</span><button id="open-manager" type="button">管理内容与素材</button></footer>
+  <dialog id="project-dialog" class="project-dialog"><button class="close-dialog" type="button" aria-label="关闭项目详情">×</button><div id="project-detail"></div></dialog>
+  <dialog id="manager-dialog" class="manager-dialog"><div class="manager-heading"><div><p class="eyebrow">个人站工作台</p><h2>内容与素材</h2></div><button class="close-dialog" type="button" aria-label="关闭素材管理">×</button></div><p class="manager-info">修改保存在当前浏览器中。交付、换设备或发布前，请导出完整网页或备份。此入口用于本地雏形，不是线上管理员权限系统。</p><div class="manager-actions"><button id="export-site" class="button primary" type="button">导出完整网页</button><button id="export-backup" class="button" type="button">备份内容</button><label class="button">恢复备份<input id="import-backup" type="file" accept="application/json,.json" hidden></label></div><form id="manager-form"><div class="form-row"><label>联系邮箱<input id="edit-email" type="email" placeholder="补充你的公开联系邮箱"></label><label>首页展示素材<select id="edit-hero"></select></label></div><p class="field-hint">首页可使用任意项目封面。尚未上传封面时，将显示交互式波面占位。</p><div class="manager-section-heading"><h3>美术项目</h3></div><div id="manager-projects"></div><div class="manager-section-heading"><h3>技术工具与工作流</h3><button type="button" id="add-tool">+ 新增工具</button></div><label>GitHub 主页（可选）<input id="edit-github-profile" type="url" placeholder="https://github.com/用户名"></label><p class="field-hint">每个工具可添加独立仓库链接、封面或演示视频。Blender 插件与 ComfyUI 工作流文件可通过仓库提供。</p><div id="manager-tools"></div><button class="button primary save-button" type="submit">保存文字与设置</button></form><p id="manager-status" role="status" aria-live="polite"></p></dialog>
+  <dialog id="image-dialog" class="image-dialog" aria-labelledby="image-caption"><div class="image-dialog-heading"><p id="image-caption"></p><button class="close-dialog" type="button" aria-label="关闭图片">×</button></div><div class="image-scroll"><img id="expanded-image" alt=""></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script id="site-data" type="application/json">null</script>
+  <script src="app.js"></script>
+</body>
+</html>

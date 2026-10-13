@@ -1,0 +1,189 @@
+[
+  {
+    "file": "portrait.webp",
+    "source": "portrait.jpg",
+    "crop": null,
+    "key": null
+  },
+  {
+    "file": "evil-cover.webp",
+    "source": "evil-scene-forest.jpg",
+    "crop": null,
+    "key": "evil-hero:cover"
+  },
+  {
+    "file": "evil-heroes.webp",
+    "source": "evil-heroes.webp",
+    "crop": null,
+    "key": "evil-hero:character"
+  },
+  {
+    "file": "evil-npcs.webp",
+    "source": "evil-npcs.webp",
+    "crop": null,
+    "key": "evil-hero:npcs"
+  },
+  {
+    "file": "evil-forest.webp",
+    "source": "evil-scene-forest.jpg",
+    "crop": null,
+    "key": "evil-hero:environment"
+  },
+  {
+    "file": "evil-volcano.webp",
+    "source": "evil-scene-volcano.jpg",
+    "crop": null,
+    "key": "evil-hero:volcano"
+  },
+  {
+    "file": "evil-playtest.webp",
+    "source": "evil-playtest.jpg",
+    "crop": null,
+    "key": "evil-hero:playtest"
+  },
+  {
+    "file": "solar-cover.webp",
+    "source": "vr-scenes.jpg",
+    "crop": [
+      0.038,
+      0.61,
+      0.564,
+      0.78
+    ],
+    "key": "solar-vr:cover"
+  },
+  {
+    "file": "solar-board.webp",
+    "source": "vr-scenes.jpg",
+    "crop": null,
+    "key": "solar-vr:scene"
+  },
+  {
+    "file": "solar-effects.webp",
+    "source": "vr-scenes.jpg",
+    "crop": [
+      0.595,
+      0.51,
+      0.946,
+      0.627
+    ],
+    "key": "solar-vr:effects"
+  },
+  {
+    "file": "solar-earth.webp",
+    "source": "vr-scenes.jpg",
+    "crop": [
+      0.035,
+      0.32,
+      0.375,
+      0.474
+    ],
+    "key": "solar-vr:breakdown"
+  },
+  {
+    "file": "water-cover.webp",
+    "source": "technical-work.jpg",
+    "crop": [
+      0.235,
+      0.612,
+      0.878,
+      0.939
+    ],
+    "key": "water:cover"
+  },
+  {
+    "file": "water-detail.webp",
+    "source": "technical-work.jpg",
+    "crop": [
+      0.225,
+      0.59,
+      0.892,
+      0.943
+    ],
+    "key": "water:demo"
+  },
+  {
+    "file": "nba-cover.webp",
+    "source": "nba-app.jpg",
+    "crop": [
+      0.3,
+      0.045,
+      0.735,
+      0.46
+    ],
+    "key": "nba:cover"
+  },
+  {
+    "file": "nba-app.webp",
+    "source": "nba-app.jpg",
+    "crop": null,
+    "key": "nba:world"
+  },
+  {
+    "file": "nba-assets.webp",
+    "source": "nba-assets.jpg",
+    "crop": null,
+    "key": "nba:assets"
+  },
+  {
+    "file": "alien-cover.webp",
+    "source": "alien-scenes.jpg",
+    "crop": [
+      0.039,
+      0.785,
+      0.564,
+      0.965
+    ],
+    "key": "alien-vr:cover"
+  },
+  {
+    "file": "alien-scenes.webp",
+    "source": "alien-scenes.jpg",
+    "crop": null,
+    "key": "alien-vr:scene"
+  },
+  {
+    "file": "alien-space.webp",
+    "source": "alien-scenes.jpg",
+    "crop": [
+      0.596,
+      0.682,
+      0.945,
+      0.8
+    ],
+    "key": "alien-vr:tour"
+  },
+  {
+    "file": "hologram-cover.webp",
+    "source": "technical-work.jpg",
+    "crop": [
+      0.182,
+      0.052,
+      0.506,
+      0.445
+    ],
+    "key": "hologram:cover"
+  },
+  {
+    "file": "hologram-device.webp",
+    "source": "technical-work.jpg",
+    "crop": [
+      0.182,
+      0.052,
+      0.506,
+      0.445
+    ],
+    "key": "hologram:scene"
+  },
+  {
+    "file": "hologram-avatar.webp",
+    "source": "technical-work.jpg",
+    "crop": [
+      0.675,
+      0.085,
+      0.887,
+      0.42
+    ],
+    "key": "hologram:demo"
+  }
+]
