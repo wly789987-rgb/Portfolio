@@ -1,0 +1,111 @@
+name: 发布个人站
+run-name: ${{ inputs.operation }} · ${{ inputs.revision || 'main / previous' }}
+
+on:
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: '发布 deploy；回退 rollback'
+        type: choice
+        options: [deploy, rollback]
+        default: deploy
+        required: true
+      revision:
+        description: '留空：发布 main 当前版本 / 回退上一版；或填写完整 40 位提交号'
+        type: string
+        required: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: portfolio-production
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    env:
+      DEPLOY_HOST: '47.111.109.82'
+      DEPLOY_USER: portfolio-deploy
+      OPERATION: ${{ inputs.operation }}
+      REVISION: ${{ inputs.revision }}
+    steps:
+      - name: 读取仓库
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: 准备部署身份与版本
+        env:
+          PRIVATE_KEY: ${{ secrets.DEPLOY_SSH_KEY }}
+          HOST_KEYS: ${{ secrets.DEPLOY_KNOWN_HOSTS }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ -n "$PRIVATE_KEY" && -n "$HOST_KEYS" ]] || {
+            echo '首次发布前请按 deploy/README.md 完成服务器初始化，并添加两个 Actions Secrets。' >&2
+            exit 1
+          }
+          install -d -m 700 "$RUNNER_TEMP/portfolio-ssh"
+          printf '%s\n' "$PRIVATE_KEY" > "$RUNNER_TEMP/portfolio-ssh/key"
+          printf '%s\n' "$HOST_KEYS" > "$RUNNER_TEMP/portfolio-ssh/known_hosts"
+          chmod 600 "$RUNNER_TEMP/portfolio-ssh/"*
+          ssh-keygen -y -f "$RUNNER_TEMP/portfolio-ssh/key" >/dev/null
+          ssh-keygen -F "$DEPLOY_HOST" -f "$RUNNER_TEMP/portfolio-ssh/known_hosts" >/dev/null
+          if [[ "$OPERATION" == deploy ]]; then
+            selected=${REVISION:-$GITHUB_SHA}
+            [[ "$selected" =~ ^[0-9a-f]{40}$ ]] || { echo '请填写完整提交号。' >&2; exit 1; }
+            git cat-file -e "$selected^{commit}"
+            git merge-base --is-ancestor "$selected" origin/main
+            git archive --format=tar "$selected" index.html app.js style.css assets | gzip > "$RUNNER_TEMP/site.tar.gz"
+          elif [[ "$OPERATION" == rollback ]]; then
+            selected=${REVISION:-previous}
+            [[ "$selected" == previous || "$selected" =~ ^[0-9a-f]{40}$ ]] || exit 1
+          else
+            exit 1
+          fi
+          printf 'SELECTED=%s\n' "$selected" >> "$GITHUB_ENV"
+
+      - name: 发布与公网验证
+        shell: bash
+        run: |
+          set -euo pipefail
+          ssh_args=(-i "$RUNNER_TEMP/portfolio-ssh/key" -o BatchMode=yes
+            -o IdentitiesOnly=yes -o StrictHostKeyChecking=yes
+            -o UserKnownHostsFile="$RUNNER_TEMP/portfolio-ssh/known_hosts"
+            -o ConnectTimeout=15 -o ServerAliveInterval=15 -o ServerAliveCountMax=4)
+          target="$DEPLOY_USER@$DEPLOY_HOST"
+          if [[ "$OPERATION" == deploy ]]; then
+            ssh "${ssh_args[@]}" "$target" "deploy $SELECTED" < "$RUNNER_TEMP/site.tar.gz" > "$RUNNER_TEMP/result.json"
+          else
+            ssh "${ssh_args[@]}" "$target" "rollback $SELECTED" > "$RUNNER_TEMP/result.json"
+          fi
+          cat "$RUNNER_TEMP/result.json"
+          verify() {
+            curl --fail --silent --show-error --retry 3 --retry-all-errors --retry-delay 3 \
+              --connect-timeout 10 --max-time 30 https://wangliyan.wang/release.json > "$RUNNER_TEMP/public.json" &&
+            python3 -c 'import json,sys; a,b=(json.load(open(p)) for p in sys.argv[1:]); assert a["release_id"] == b["release_id"], "公网版本不一致"' \
+              "$RUNNER_TEMP/result.json" "$RUNNER_TEMP/public.json"
+          }
+          if ! verify; then
+            echo '公网验证失败，尝试恢复切换前的版本。' >&2
+            ssh "${ssh_args[@]}" "$target" 'rollback previous'
+            exit 1
+          fi
+          {
+            echo '## 发布成功'
+            echo "操作：$OPERATION"
+            echo '网站：https://wangliyan.wang/'
+            echo '```json'
+            cat "$RUNNER_TEMP/result.json"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: 清理临时密钥
+        if: always()
+        shell: bash
+        run: rm -f "$RUNNER_TEMP/portfolio-ssh/key" "$RUNNER_TEMP/portfolio-ssh/known_hosts"

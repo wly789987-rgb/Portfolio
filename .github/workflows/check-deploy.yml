@@ -1,0 +1,20 @@
+name: 检查发布工具
+on:
+  push:
+    branches: [main, 'codex/**']
+    paths: ['deploy/**', '.github/workflows/**']
+  pull_request:
+    paths: ['deploy/**', '.github/workflows/**']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          persist-credentials: false
+      - run: python3 -m unittest discover -s deploy -p 'test_*.py' -v
+      - run: bash -n deploy/setup-server.sh

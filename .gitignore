@@ -4,3 +4,9 @@ Thumbs.db
 work/
 node_modules/
 *.log
+__pycache__/
+*.pyc
+.env
+.env.*
+*.pem
+*.key
