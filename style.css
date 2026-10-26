@@ -284,3 +284,15 @@
   .brand svg { width: 22px; height: 22px; }
   .capability-skill-grid { grid-template-columns: minmax(0, 1fr); }
 }
+/* On-demand GIF previews keep the same media frame as still images. */
+.gif-preview{position:relative;display:flex;flex-direction:column;width:100%;min-width:0;background:#0b141f;overflow:hidden;border-radius:8px}
+.gif-preview>img{display:block;width:100%;height:auto;min-height:0;aspect-ratio:16/9;object-fit:contain}
+.gif-preview-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:10px 12px;background:#101b28}
+.gif-preview-actions button,.gif-preview-actions a{display:inline-flex;align-items:center;min-height:40px;color:#bfe7ef;font:inherit;font-size:13px}
+.gif-preview-actions button{padding:6px 12px;border:1px solid #36515f;border-radius:6px;background:#172b39;cursor:pointer}
+.gif-preview-actions button:disabled{opacity:.65;cursor:progress}
+.gif-preview-actions button:focus-visible,.gif-preview-actions a:focus-visible{outline:2px solid #9be7ef;outline-offset:3px}
+.project-video-links{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0}
+.forest-film-screen .gif-preview{height:100%}
+.forest-film-screen .gif-preview>img{flex:1;min-height:0}
+img[data-media-src]{background:linear-gradient(135deg,#101c29,#172e3d)}
