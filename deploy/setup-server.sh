@@ -89,7 +89,8 @@ if ! nginx -t || ! systemctl reload nginx; then
   echo 'Setup failed; restored Nginx configuration.' >&2
   exit 1
 fi
-if ! curl --noproxy '*' --fail --silent --show-error --max-time 20 \
+if ! curl --noproxy '*' --fail --silent --show-error --max-time 10 \
+  --retry 5 --retry-all-errors --retry-delay 1 --retry-max-time 20 \
   --resolve wangliyan.wang:443:127.0.0.1 https://wangliyan.wang/release.json; then
   cp -a "$BACKUP" "$CONFIG"
   nginx -t && systemctl reload nginx
