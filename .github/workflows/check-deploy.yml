@@ -2,9 +2,9 @@ name: 检查发布工具
 on:
   push:
     branches: [main, 'codex/**']
-    paths: ['deploy/**', '.github/workflows/**']
+    paths: ['deploy/**', '.github/workflows/**', '.gitattributes']
   pull_request:
-    paths: ['deploy/**', '.github/workflows/**']
+    paths: ['deploy/**', '.github/workflows/**', '.gitattributes']
   workflow_dispatch:
 permissions:
   contents: read
