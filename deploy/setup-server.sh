@@ -41,7 +41,9 @@ if command -v selinuxenabled >/dev/null && selinuxenabled; then
     semanage fcontext -m -t httpd_sys_content_t '/srv/portfolio(/.*)?'
 fi
 
-useradd --create-home --shell /bin/bash "$ACCOUNT"
+# An unusable password hash prevents password login without an account-lock
+# marker that can also block public-key login on servers with UsePAM=no.
+useradd --create-home --shell /bin/bash --password '*' "$ACCOUNT"
 install -d -m 755 -o "$ACCOUNT" -g "$ACCOUNT" "$BASE" "$BASE/releases"
 INITIAL="manual-$(date -u +%Y%m%dT%H%M%SZ)"
 install -d -m 755 "$BASE/releases/$INITIAL"
