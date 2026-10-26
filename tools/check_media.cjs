@@ -6,11 +6,49 @@ const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
 (async () => {
   const browser = await chromium.launch({ headless: true, ...(process.platform === 'win32' ? { channel: 'msedge' } : {}) });
   try {
+    const url = process.argv[2] || 'http://127.0.0.1:8782/';
+    // Project titles and descriptions must survive a completely blocked script.
+    const staticContext = await browser.newContext({ javaScriptEnabled: false });
+    const staticPage = await staticContext.newPage();
+    await staticPage.route(/\.(webp|jpg|png|gif|mp4|pdf)(\?|$)/, route => route.abort());
+    await staticPage.goto(url, { waitUntil: 'load' });
+    assert.equal(await staticPage.locator('#project-grid > .project-card').count(), 8);
+    assert.equal(await staticPage.locator('#project-grid .project-summary').count(), 8);
+    await staticPage.locator('#works').scrollIntoViewIfNeeded();
+    await staticPage.locator('#project-grid h3').first().waitFor({ state: 'visible' });
+    await staticContext.close();
+
+    // A blocked local database must not prevent the first interactive render.
+    const blockedContext = await browser.newContext();
+    await blockedContext.addInitScript(() => {
+      Object.defineProperty(window, 'indexedDB', { value: { open() { return {}; } } });
+    });
+    const blockedPage = await blockedContext.newPage();
+    await blockedPage.goto(url, { waitUntil: 'load' });
+    await blockedPage.waitForFunction(() => document.body.dataset.ready === 'true', { timeout: 5000 });
+    assert.equal(await blockedPage.locator('#project-grid > .project-card').count(), 8);
+    await blockedContext.close();
+
+    // Reproduce the user's stale HTML without a filter bar against the new script.
+    const compatibilityContext = await browser.newContext();
+    const compatibilityPage = await compatibilityContext.newPage(), compatibilityErrors = [];
+    compatibilityPage.on('pageerror', e => compatibilityErrors.push(e.message));
+    await compatibilityPage.route(url, async route => {
+      const response = await route.fetch();
+      const body = (await response.text()).replace(/<div class="filter-bar"[\s\S]*?<\/div>/, '');
+      await route.fulfill({ response, body });
+    });
+    await compatibilityPage.goto(url, { waitUntil: 'load' });
+    await compatibilityPage.waitForFunction(() => document.body.dataset.ready === 'true');
+    assert.equal(await compatibilityPage.locator('#project-grid > .project-card').count(), 8);
+    assert.deepEqual(compatibilityErrors, []);
+    await compatibilityContext.close();
+
     const context = await browser.newContext({ viewport: { width: 1440, height: 900 } });
     const page = await context.newPage(), errors = [], requested = [];
     page.on('pageerror', e => errors.push(e.message));
     page.on('request', r => requested.push(r.url()));
-    await page.goto(process.argv[2] || 'http://127.0.0.1:8782/', { waitUntil: 'load' });
+    await page.goto(url, { waitUntil: 'load' });
     await page.waitForFunction(() => document.body.dataset.ready === 'true');
     assert.equal(requested.some(url => /\.(mp4|pdf|gif)(\?|$)/.test(url)), false, 'No eager video/GIF/PDF');
     assert.equal(requested.filter(url => /app\.js/.test(url)).length, 1, 'No duplicate startup source fetch');
