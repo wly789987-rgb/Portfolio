@@ -31,3 +31,256 @@
 .hero-atmosphere #lab-canvas[hidden]{display:none}
 
 @media(max-width:700px){.header{padding-left:6%;padding-right:6%}.header nav{gap:12px;font-size:11px}.brand{font-size:17px;gap:9px}.brand svg{width:25px;height:25px}.brand small{font-size:9px}}
+
+/* Shared layout scale: one page width, one preview frame, one card system. */
+:root {
+  --content-width: 1248px;
+  --page-gutter: clamp(20px, 4.5vw, 64px);
+  --page-inset: max(var(--page-gutter), calc((100% - var(--content-width)) / 2));
+  --grid-gap: 24px;
+  --card-padding: 24px;
+  --card-radius: 14px;
+  --control-radius: 8px;
+  --preview-ratio: 16 / 10;
+  --preview-min-height: 240px;
+  --line: #2b3948;
+}
+
+.header, footer { padding-inline: var(--page-inset); }
+.hero { display: block; padding: 0; min-height: 0; }
+.hero-copy, .section {
+  width: min(calc(100% - var(--page-gutter) * 2), var(--content-width));
+  max-width: var(--content-width);
+  margin-inline: auto;
+}
+.hero-copy { padding-block: 56px 64px; }
+.hero-role-title { font-size: clamp(36px, 6.5vw, 96px); }
+.hero-statement { font-size: clamp(30px, 3.8vw, 54px); }
+.hero-highlights { padding: 28px var(--page-inset); gap: var(--grid-gap); }
+.hero-motion-toggle { right: var(--page-inset); min-height: 44px; }
+.section { padding-block: 80px; }
+.section-heading { gap: 24px; margin-bottom: 32px; }
+.section-heading h2 { font-size: clamp(28px, 3vw, 38px); line-height: 1.35; }
+.section-heading > p { font-size: 14px; line-height: 1.8; max-width: 40ch; }
+.about { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 64px; }
+.about-intro, .timeline, .contact-right { min-width: 0; }
+
+.project-grid, .tool-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: stretch;
+  gap: var(--grid-gap);
+}
+.project-card, .project-card:first-child, .tool-card {
+  display: flex;
+  flex-direction: column;
+  grid-column: auto;
+  min-width: 0;
+  align-self: stretch;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: var(--card-radius);
+  background: #0d151f;
+}
+.project-open, .tool-visual, .project-card > .forest-showcase {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: auto;
+  aspect-ratio: var(--preview-ratio);
+  min-height: var(--preview-min-height);
+  overflow: hidden;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  background-color: #0a121c;
+}
+.project-open > .project-media, .project-open > .project-art,
+.tool-visual > .project-media, .tool-visual > svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  padding: 16px;
+  object-fit: contain;
+}
+.project-open:hover .project-art, .project-open:hover .project-media { transform: none; }
+.project-info, .project-card:first-child .project-info,
+.forest-project .project-info, .tool-info {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: var(--card-padding);
+}
+.project-category { font-size: 12px; line-height: 1.6; margin: 0 0 8px; }
+.project-info h3, .forest-project .project-info h3, .tool-info h3 {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.45;
+  margin: 0 0 12px;
+  overflow-wrap: anywhere;
+}
+.project-info h3 button { min-height: 44px; }
+.project-info .project-summary, .forest-project .project-summary, .tool-info p {
+  max-width: none;
+  min-height: 3.6em;
+  margin: 0 0 20px;
+  font-size: 14px;
+  line-height: 1.8;
+}
+.project-card .tags, .project-card:first-child .tags { margin-top: auto; gap: 8px; }
+.tags span { padding: 4px 9px; font-size: 11px; border-radius: 6px; }
+.project-open-arrow, .gallery-enlarge {
+  width: 44px;
+  height: 44px;
+  right: 12px;
+  bottom: 12px;
+  font-size: 20px;
+  border-radius: var(--control-radius);
+}
+.tool-card-top { min-height: 56px; padding: 12px var(--card-padding); }
+.tool-card-top small { font-size: 12px; }
+.tool-info h3 { min-height: 44px; display: flex; align-items: center; }
+.tool-repository { min-height: 44px; margin-top: auto; font-size: 13px; }
+.portfolio-modules { gap: var(--grid-gap); margin-block: 24px 32px; }
+.portfolio-modules > button { min-height: 96px; padding: 20px var(--card-padding); border-radius: var(--card-radius); }
+.portfolio-modules strong { font-size: 22px; }
+.portfolio-modules small { font-size: 12px; }
+.filter-bar { gap: 8px; margin-bottom: 24px; padding-bottom: 16px; }
+.filter-bar button, .character-controls select, .character-controls button {
+  min-height: 44px;
+  padding: 8px 14px;
+  font-size: 13px;
+  border-radius: var(--control-radius);
+}
+.button, .hero-actions .button { min-height: 48px; border-radius: var(--control-radius); font-size: 14px; }
+
+/* Keep the interactive deck inside the same frame as neighbouring artwork. */
+.project-card > .forest-showcase { display: grid; grid-template-rows: 44px minmax(0, 1fr); }
+.project-card .forest-view-switch { min-width: 0; gap: 20px; padding-inline: 16px; }
+.project-card .forest-view-switch button { min-height: 44px; padding-block: 8px; font-size: 12px; }
+.project-card .forest-view:not([hidden]) { display: grid; min-height: 0; }
+.project-card .forest-deck, .project-card .forest-films {
+  display: grid;
+  grid-template-rows: minmax(0, 1fr) 60px;
+  height: 100%;
+  min-height: 0;
+}
+.project-card .forest-deck { --card-step: clamp(36px, 5vw, 64px); }
+.project-card .forest-stage, .project-card .forest-film-screen { height: 100%; min-height: 0; }
+.project-card .forest-card { top: 8px; height: calc(100% - 24px); }
+.project-card .forest-toolbar { gap: 16px; padding: 4px 12px; min-width: 0; }
+.project-card .forest-toolbar > button { width: 44px; height: 44px; flex: none; border-radius: var(--control-radius); }
+.project-card .forest-caption { min-width: 0; }
+.project-card .forest-film-screen video { max-height: 100%; }
+.project-card .forest-film-picker { min-height: 0; padding: 8px; gap: 6px; }
+.project-card .forest-film-picker button { min-width: 0; min-height: 44px; padding: 4px 6px; border-radius: var(--control-radius); }
+.project-card .forest-film-picker img { width: 32px; height: 20px; flex: none; }
+
+.character-comparison { padding: var(--card-padding); border-radius: var(--card-radius); }
+.compact-project > .character-comparison { padding: var(--card-padding); }
+.character-heading { align-items: flex-start; gap: 24px; margin-bottom: 24px; }
+.character-heading h3 { font-size: 22px; line-height: 1.45; }
+.character-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; }
+.character-card { padding: 12px; border-color: var(--line); border-radius: 10px; }
+.character-stage, .compact-project .character-stage {
+  height: auto;
+  min-height: 0;
+  max-height: 300px;
+  aspect-ratio: 3 / 4;
+}
+.character-stage canvas { position: absolute; inset: 0; width: 100%; height: 100%; }
+.character-card h4 { min-height: 24px; font-size: 14px; margin: 12px 0 0; }
+.character-note, .character-load-status { font-size: 12px; }
+.capability-board { gap: var(--grid-gap); }
+.capability-panel { padding: var(--card-padding); border-color: var(--line); border-radius: var(--card-radius); }
+.capability-item { border-radius: var(--control-radius); }
+.capability-skill-grid { gap: 16px; }
+.capability-icon-grid .capability-name { font-size: 12px; }
+.capability-skill-grid .capability-name { font-size: 14px; }
+
+/* Detail media retain their original aspect inside a consistent display area. */
+.project-dialog, .forest-dialog, .image-dialog {
+  width: min(1120px, calc(100% - 32px));
+  max-width: 1120px;
+  max-height: calc(100dvh - 32px);
+  border-color: var(--line);
+  border-radius: var(--card-radius);
+}
+.detail-hero { width: 100%; max-width: 100%; aspect-ratio: 16 / 9; max-height: 560px; min-height: 240px; border-bottom: 1px solid var(--line); }
+.detail-hero > .project-media, .detail-hero > .project-art { position: absolute; inset: 0; padding: 24px; object-fit: contain; }
+.detail-content, .forest-detail, .compact-project { padding: 32px; }
+.detail-content h2 { font-size: clamp(26px, 3vw, 34px); line-height: 1.4; }
+.detail-summary, .detail-columns ul, .technical-breakdown p { font-size: 14px; line-height: 1.9; }
+.detail-columns, .detail-gallery, .technical-breakdown { gap: 24px; }
+.detail-gallery { align-items: stretch; }
+.legacy-gallery figure { display: flex; min-width: 0; flex-direction: column; }
+.legacy-gallery .slot-visual {
+  position: relative;
+  aspect-ratio: var(--preview-ratio);
+  min-height: 200px;
+  flex: none;
+  border-color: var(--line);
+  border-radius: 10px;
+}
+.legacy-gallery .gallery-video { grid-column: auto; }
+.legacy-gallery .gallery-video .slot-visual { aspect-ratio: var(--preview-ratio); }
+.legacy-gallery .slot-visual > .project-media { position: absolute; inset: 0; width: 100%; height: 100%; padding: 12px; object-fit: contain; }
+.legacy-gallery figcaption { margin-top: 12px; font-size: 13px; line-height: 1.7; }
+.technical-breakdown article { padding: var(--card-padding); border-radius: 10px; }
+.close-dialog { border-radius: var(--control-radius); }
+.project-dialog > .close-dialog { top: 12px; right: 12px; }
+.image-scroll { max-height: calc(100dvh - 100px); padding: 24px; }
+.image-scroll img { max-width: 100%; height: auto; }
+
+@media (max-width: 1000px) {
+  :root { --card-padding: 20px; --grid-gap: 20px; }
+  .about { gap: 32px; }
+  .profile-heading { flex-direction: column; align-items: flex-start; }
+  .personal-avatar { align-self: center; }
+  .character-heading { flex-direction: column; }
+  .character-controls { margin-top: 0; }
+  .character-grid { gap: 12px; }
+}
+
+@media (max-width: 700px) {
+  :root { --page-gutter: 20px; --grid-gap: 20px; --card-padding: 20px; }
+  .header { height: 72px; }
+  .hero-copy { padding-block: 36px 72px; }
+  .hero-role-title { font-size: clamp(32px, 8.6vw, 56px); }
+  .hero-statement { font-size: clamp(30px, 7.5vw, 44px); }
+  .hero-highlights { grid-template-columns: 1fr; padding-block: 24px; }
+  .section { padding-block: 56px; }
+  .section-heading { flex-direction: column; align-items: flex-start; gap: 12px; margin-bottom: 24px; }
+  .section-heading > p { max-width: none; margin: 0; font-size: 13px; }
+  .section-heading .eyebrow { font-size: 12px; }
+  .project-grid, .tool-grid { grid-template-columns: minmax(0, 1fr); }
+  .project-info h3, .forest-project .project-info h3, .tool-info h3 { font-size: 21px; }
+  .portfolio-modules { gap: 12px; margin-bottom: 24px; }
+  .portfolio-modules > button { padding: 16px; min-height: 96px; }
+  .portfolio-modules strong { font-size: 20px; }
+  .portfolio-modules small { max-width: none; font-size: 11px; }
+  .filter-bar button { font-size: 12px; padding-inline: 12px; }
+  .character-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .character-card, .compact-project .character-card { padding: 8px; }
+  .character-card h4 { font-size: 13px; }
+  .character-controls { gap: 8px; }
+  .character-controls label { flex-wrap: wrap; font-size: 12px; }
+  .capability-board { grid-template-columns: minmax(0, 1fr); }
+  .capability-skill-grid { gap: 12px; }
+  .capability-skill-grid .capability-item { min-height: 80px; padding: 12px; }
+  .capability-skill-grid .capability-name { font-size: 12px; }
+  .detail-content, .forest-detail, .compact-project { padding: 24px 20px; }
+  .detail-gallery, .detail-columns, .technical-breakdown { grid-template-columns: minmax(0, 1fr); gap: 20px; }
+  .detail-hero { min-height: 220px; }
+  .image-scroll { padding: 16px; }
+}
+
+@media (max-width: 380px) {
+  .header nav { gap: 8px; font-size: 11px; }
+  .brand { font-size: 16px; }
+  .brand small { font-size: 8px; }
+  .brand svg { width: 22px; height: 22px; }
+  .capability-skill-grid { grid-template-columns: minmax(0, 1fr); }
+}
