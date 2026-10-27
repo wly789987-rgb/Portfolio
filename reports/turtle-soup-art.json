@@ -1,0 +1,72 @@
+{
+  "captureUTC": "2026-10-27T09:26:08.6088604Z",
+  "scenes": [
+    {
+      "path": "D:\\wly\\unity\\Turtle Soup\\Assets\\SoupHouse\\Scenes\\SoupHouseOpening.unity",
+      "sha256": "e4ecfdf8a6defec0a0bf61390d2c5f574e07bc286d557325e463d49bacd402c9"
+    },
+    {
+      "path": "D:\\wly\\unity\\Turtle Soup\\Assets\\SoupHouse\\Scenes\\SoupHouse.unity",
+      "sha256": "764d4897914f9a018e42733a8307216aacf35d4f81d4cbf748cdd8f31435289d"
+    }
+  ],
+  "assets": [
+    {
+      "key": "ta-smoke-texture",
+      "title": "烟雾贴图 · 透明通道控制轮廓",
+      "source": "D:\\wly\\unity\\Turtle Soup\\Assets\\SoupHouse\\Opening\\Smoke-v16\\OriginalRimRetouched.png",
+      "sourceSHA256": "bf41d3a609ed36e0051bc7d3b9947fe7ebeb90a7b53af911b48468ecec217cc2",
+      "originalSize": [
+        1672,
+        941
+      ],
+      "crop": null,
+      "web": "assets/media/02dc66bbb239f76c1fb5.webp",
+      "exported": "C:\\Users\\ailinker-intel\\.codex\\worktrees\\portfolio-versioning\\王立焱个人站-完整包-20261016\\output\\turtle-soup\\art-breakdown\\ta-smoke-texture.png"
+    },
+    {
+      "key": "ta-flow-map",
+      "title": "Flow Map · RG 通道驱动局部流向",
+      "source": "D:\\wly\\unity\\Turtle Soup\\Assets\\SoupHouse\\Opening\\Textures\\CurlFlowRG.png",
+      "sourceSHA256": "f5ebcec768fc63f53ee1a66f4dd3a35b162ad86083fc17220ca461f36f2d8252",
+      "originalSize": [
+        256,
+        256
+      ],
+      "crop": null,
+      "web": "assets/media/299418aaea3fae8902d1.webp",
+      "exported": "C:\\Users\\ailinker-intel\\.codex\\worktrees\\portfolio-versioning\\王立焱个人站-完整包-20261016\\output\\turtle-soup\\art-breakdown\\ta-flow-map.png"
+    },
+    {
+      "key": "ta-ring-mask",
+      "title": "环形图案 · 刻痕与嵌线的输入",
+      "source": "D:\\wly\\unity\\Turtle Soup\\Assets\\SoupHouse\\Art\\UI\\Rings-v01\\CenterRing-v01.png",
+      "sourceSHA256": "6ce47eb2f0ec772bfc819a24f99e7e5ec2a86ea9c963dd1364fb77c05eff5fcb",
+      "originalSize": [
+        1254,
+        1254
+      ],
+      "crop": null,
+      "web": "assets/media/40c95f8579fd0a123da0.webp",
+      "exported": "C:\\Users\\ailinker-intel\\.codex\\worktrees\\portfolio-versioning\\王立焱个人站-完整包-20261016\\output\\turtle-soup\\art-breakdown\\ta-ring-mask.png"
+    },
+    {
+      "key": "ta-engraving-detail",
+      "title": "木桌刻痕与环形铜线 · 实机局部",
+      "source": "D:\\wly\\unity\\Turtle Soup\\Captures\\PortfolioInterfaces-20261027\\20261027-172608\\04-story-selection.png",
+      "sourceSHA256": "734889979df83642c29623803f6d0d4abaeb462c82228ede55d9cb262d3ca1d2",
+      "originalSize": [
+        2560,
+        1440
+      ],
+      "crop": [
+        0.32,
+        0.2,
+        0.68,
+        0.8
+      ],
+      "web": "assets/media/b9cbc67686eb1be60bc8.webp",
+      "exported": "C:\\Users\\ailinker-intel\\.codex\\worktrees\\portfolio-versioning\\王立焱个人站-完整包-20261016\\output\\turtle-soup\\art-breakdown\\ta-engraving-detail.png"
+    }
+  ]
+}

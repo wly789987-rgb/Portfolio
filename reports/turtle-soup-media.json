@@ -1,0 +1,120 @@
+{
+  "project": "Turtle Soup / 汤之馆",
+  "captures": "Opening: current Play Mode screen capture; other themes: historical deterministic screenshots",
+  "gifs": [
+    {
+      "name": "turtle-opening",
+      "title": "开场引导 · 展示剪辑",
+      "src": "assets/previews/91065019d2dbc6dae750.gif",
+      "poster": "assets/previews/8d73641601573ef4ecda.webp",
+      "bytes": 19277681,
+      "frames": 183,
+      "source": "Turtle Soup / Captures/PortfolioOpening-20261027/20261027-112955",
+      "start": 0,
+      "seconds": 33.32,
+      "fps": "variable / captured ~5.4 fps",
+      "captureMode": "Play Mode / actual screen output",
+      "complete": false,
+      "sourceCaptureCompleted": true,
+      "sourceDuration": 62.69554138183594,
+      "keptIntervals": [
+        [
+          0.0,
+          20.8
+        ],
+        [
+          50.2,
+          62.69554138183594
+        ]
+      ]
+    },
+    {
+      "name": "turtle-standard",
+      "title": "常规 · 暖色烛光",
+      "src": "assets/previews/0744799c6b9867e8cb0e.gif",
+      "poster": "assets/previews/58120fd198ee48ed4491.webp",
+      "bytes": 868312,
+      "frames": 32,
+      "source": "Turtle Soup / Captures/ThemeAtmosphereV4/Standard",
+      "start": 12,
+      "seconds": 6.4,
+      "fps": 5
+    },
+    {
+      "name": "turtle-mildhorror",
+      "title": "微恐 · 青色薄雾",
+      "src": "assets/previews/fdb5bf12c1b239c2434a.gif",
+      "poster": "assets/previews/4759d337554e38bffd73.webp",
+      "bytes": 710130,
+      "frames": 32,
+      "source": "Turtle Soup / Captures/ThemeAtmosphereV4/MildHorror",
+      "start": 12,
+      "seconds": 6.4,
+      "fps": 5
+    },
+    {
+      "name": "turtle-horror",
+      "title": "恐怖 · 冷色与红光",
+      "src": "assets/previews/4bb360db9882cbf0017d.gif",
+      "poster": "assets/previews/eb063ddd3772eaec9f5e.webp",
+      "bytes": 765259,
+      "frames": 32,
+      "source": "Turtle Soup / Captures/ThemeAtmosphereV4/Horror",
+      "start": 12,
+      "seconds": 6.4,
+      "fps": 5
+    },
+    {
+      "name": "turtle-entertainment",
+      "title": "娱乐 · 彩色氛围",
+      "src": "assets/previews/ac9ca8154e7bc7c9d1e9.gif",
+      "poster": "assets/previews/b85d41ce37dea9a291d9.webp",
+      "bytes": 682849,
+      "frames": 32,
+      "source": "Turtle Soup / Captures/ThemeAtmosphereV4/Entertainment",
+      "start": 12,
+      "seconds": 6.4,
+      "fps": 5
+    }
+  ],
+  "stills": [
+    {
+      "key": "turtle-soup:story",
+      "name": "turtle-story.webp",
+      "type": "image/webp",
+      "data": "assets/media/8719432dd18346fc4abb.webp"
+    },
+    {
+      "key": "turtle-soup:registration",
+      "name": "turtle-registration.webp",
+      "type": "image/webp",
+      "data": "assets/media/78dcb0201d7dfdf5dd86.webp"
+    },
+    {
+      "key": "turtle-soup:surface",
+      "name": "turtle-surface.webp",
+      "type": "image/webp",
+      "data": "assets/media/fd81bcc1b9074ff457c2.webp"
+    },
+    {
+      "key": "turtle-soup:cover",
+      "name": "turtle-opening.webp",
+      "type": "image/webp",
+      "data": "assets/previews/56cd7ea0b927086c88fa.webp"
+    }
+  ],
+  "fresh_unity_run": true,
+  "capture_completed": true,
+  "capture_duration": 62.69554138183594,
+  "capture_frames": 339,
+  "opening_edit": [
+    [
+      0.0,
+      20.8
+    ],
+    [
+      50.2,
+      62.69554138183594
+    ]
+  ]
+}

@@ -12,8 +12,9 @@ const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
     const staticPage = await staticContext.newPage();
     await staticPage.route(/\.(webp|jpg|png|gif|mp4|pdf)(\?|$)/, route => route.abort());
     await staticPage.goto(url, { waitUntil: 'load' });
-    assert.equal(await staticPage.locator('#project-grid > .project-card').count(), 8);
-    assert.equal(await staticPage.locator('#project-grid .project-summary').count(), 8);
+    assert.equal(await staticPage.locator('#project-grid > .project-card').count(), 9);
+    assert.equal(await staticPage.locator('#project-grid .project-summary').count(), 9);
+    assert.ok((await staticPage.locator('#project-grid').innerText()).includes('海龟汤 · 汤之馆'));
     await staticPage.locator('#works').scrollIntoViewIfNeeded();
     await staticPage.locator('#project-grid h3').first().waitFor({ state: 'visible' });
     await staticContext.close();
@@ -26,7 +27,7 @@ const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
     const blockedPage = await blockedContext.newPage();
     await blockedPage.goto(url, { waitUntil: 'load' });
     await blockedPage.waitForFunction(() => document.body.dataset.ready === 'true', { timeout: 5000 });
-    assert.equal(await blockedPage.locator('#project-grid > .project-card').count(), 8);
+    assert.equal(await blockedPage.locator('#project-grid > .project-card').count(), 9);
     await blockedContext.close();
 
     // Reproduce the user's stale HTML without a filter bar against the new script.
@@ -40,7 +41,7 @@ const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
     });
     await compatibilityPage.goto(url, { waitUntil: 'load' });
     await compatibilityPage.waitForFunction(() => document.body.dataset.ready === 'true');
-    assert.equal(await compatibilityPage.locator('#project-grid > .project-card').count(), 8);
+    assert.equal(await compatibilityPage.locator('#project-grid > .project-card').count(), 9);
     assert.deepEqual(compatibilityErrors, []);
     await compatibilityContext.close();
 
@@ -54,11 +55,19 @@ const { chromium } = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
     assert.equal(requested.filter(url => /app\.js/.test(url)).length, 1, 'No duplicate startup source fetch');
     assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
 
-    for (const id of ['solar-vr', 'alien-vr', 'nba', 'evil-hero']) {
+    for (const id of ['turtle-soup', 'solar-vr', 'alien-vr', 'nba', 'evil-hero']) {
       await page.locator(`[data-open="${id}"]`).first().click();
       const dialog = page.locator('#project-dialog');
       assert.equal(await dialog.locator('.gif-preview').count(), 1);
-      assert.ok(await dialog.locator('.project-video-links a').count());
+      if (id === 'turtle-soup') {
+        assert.equal(await dialog.locator('.gif-preview-actions a').count(), 0, 'No invented full video link');
+        assert.ok(await dialog.locator('.legacy-gallery figure').count() >= 8, 'Every current main interface has a still image');
+        for (const toggle of await dialog.locator('[data-gif-toggle]').all()) {
+          await toggle.click();
+          await page.waitForFunction(() => [...document.querySelectorAll('#project-dialog .gif-preview img')].filter(img => img.src.startsWith('blob:')).every(img => img.complete && img.naturalWidth > 0));
+          await toggle.click();
+        }
+      } else assert.ok(await dialog.locator('.project-video-links a').count());
       if (id === 'solar-vr') {
         const toggle = dialog.locator('[data-gif-toggle]');
         await toggle.click();

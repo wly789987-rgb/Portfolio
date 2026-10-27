@@ -645,6 +645,262 @@
       "original": "assets/hangzhou-portrait-layer.webp",
       "width": 1215,
       "height": 1295
+    },
+    {
+      "path": "assets/media/8719432dd18346fc4abb.webp",
+      "type": "image/webp",
+      "bytes": 145064,
+      "original": "Turtle Soup / Captures/SoupHouse/ScenePolish-StorySelection.png",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "path": "assets/media/78dcb0201d7dfdf5dd86.webp",
+      "type": "image/webp",
+      "bytes": 115836,
+      "original": "Turtle Soup / Captures/SoupHouse/RegistrationPointing-Ready.png",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "path": "assets/media/fd81bcc1b9074ff457c2.webp",
+      "type": "image/webp",
+      "bytes": 140676,
+      "original": "Turtle Soup / Captures/SoupHouse/SurfaceProjectionApplied.png",
+      "width": 1600,
+      "height": 900
+    },
+    {
+      "path": "assets/media/3d722b521668d2293de5.webp",
+      "type": "image/webp",
+      "bytes": 64720,
+      "original": "Turtle Soup / current-interfaces/01-opening.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/media/85a32cbb20262ccee1ab.webp",
+      "type": "image/webp",
+      "bytes": 14492,
+      "original": "Turtle Soup / current-interfaces/02-keeper-rules.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/media/d866747a18871bb378ee.webp",
+      "type": "image/webp",
+      "bytes": 118812,
+      "original": "Turtle Soup / current-interfaces/03-registration.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/media/c0a6bfe49e61a6c4f12d.webp",
+      "type": "image/webp",
+      "bytes": 132818,
+      "original": "Turtle Soup / current-interfaces/04-story-selection.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/media/7920ff671d91f45e9300.webp",
+      "type": "image/webp",
+      "bytes": 155028,
+      "original": "Turtle Soup / current-interfaces/05-mode-selection.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/media/fd46f2ec8e05d8153f8b.webp",
+      "type": "image/webp",
+      "bytes": 197200,
+      "original": "Turtle Soup / current-interfaces/06-story-surface.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/media/460ef76497031f67be78.webp",
+      "type": "image/webp",
+      "bytes": 168760,
+      "original": "Turtle Soup / current-interfaces/07-cooperation-rules.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/media/bcf29b733d2dfc0551a7.webp",
+      "type": "image/webp",
+      "bytes": 105738,
+      "original": "Turtle Soup / current-interfaces/08-cooperation-turn.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/media/ab28274509bea9b027bc.webp",
+      "type": "image/webp",
+      "bytes": 188680,
+      "original": "Turtle Soup / current-interfaces/09-competition-turn.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/media/fbf060d341382210372a.webp",
+      "type": "image/webp",
+      "bytes": 196452,
+      "original": "Turtle Soup / current-interfaces/10-theme-Standard.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/media/eee14a8499fe94639121.webp",
+      "type": "image/webp",
+      "bytes": 220340,
+      "original": "Turtle Soup / current-interfaces/10-theme-MildHorror.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/media/962bd6c54eb8909fd785.webp",
+      "type": "image/webp",
+      "bytes": 207350,
+      "original": "Turtle Soup / current-interfaces/10-theme-Horror.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/media/98b16bed35ba32e377f6.webp",
+      "type": "image/webp",
+      "bytes": 228098,
+      "original": "Turtle Soup / current-interfaces/10-theme-Entertainment.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/media/4bf72fdbe3eff4562a72.webp",
+      "type": "image/webp",
+      "bytes": 174482,
+      "original": "Turtle Soup / current-interfaces/11-action-question.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/media/224104207ad5768db0b9.webp",
+      "type": "image/webp",
+      "bytes": 176892,
+      "original": "Turtle Soup / current-interfaces/11-action-hint.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/media/bd6347f81f0e0fa0a995.webp",
+      "type": "image/webp",
+      "bytes": 174652,
+      "original": "Turtle Soup / current-interfaces/11-action-truth.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/media/ad11e9fda961d47b22eb.webp",
+      "type": "image/webp",
+      "bytes": 198688,
+      "original": "Turtle Soup / current-interfaces/12-success.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/media/246899ab72639ca22457.webp",
+      "type": "image/webp",
+      "bytes": 146198,
+      "original": "Turtle Soup / current-interfaces/13-replay-01.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/media/dac1403fa63c09b33679.webp",
+      "type": "image/webp",
+      "bytes": 145832,
+      "original": "Turtle Soup / current-interfaces/13-replay-02.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/media/c1ee4a902fb23ff370a5.webp",
+      "type": "image/webp",
+      "bytes": 145650,
+      "original": "Turtle Soup / current-interfaces/13-replay-03.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/media/38e44edc5cdc848a7166.webp",
+      "type": "image/webp",
+      "bytes": 149576,
+      "original": "Turtle Soup / current-interfaces/13-replay-04.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/media/e3beaeaa9ec21a084b53.webp",
+      "type": "image/webp",
+      "bytes": 153812,
+      "original": "Turtle Soup / current-interfaces/13-replay-05.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/media/1848817ec233080a3acf.webp",
+      "type": "image/webp",
+      "bytes": 127172,
+      "original": "Turtle Soup / current-interfaces/14-results.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/media/7df46e0131a84bba6e35.webp",
+      "type": "image/webp",
+      "bytes": 185222,
+      "original": "Turtle Soup / current-interfaces/15-failure.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/media/a49eb7bb8b4670b8e73d.webp",
+      "type": "image/webp",
+      "bytes": 127268,
+      "original": "Turtle Soup / current-interfaces/16-failure-results.png",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "assets/media/02dc66bbb239f76c1fb5.webp",
+      "type": "image/webp",
+      "bytes": 34938,
+      "original": "Turtle Soup / art-breakdown/ta-smoke-texture.png",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "path": "assets/media/299418aaea3fae8902d1.webp",
+      "type": "image/webp",
+      "bytes": 7676,
+      "original": "Turtle Soup / art-breakdown/ta-flow-map.png",
+      "width": 256,
+      "height": 256
+    },
+    {
+      "path": "assets/media/40c95f8579fd0a123da0.webp",
+      "type": "image/webp",
+      "bytes": 57718,
+      "original": "Turtle Soup / art-breakdown/ta-ring-mask.png",
+      "width": 1254,
+      "height": 1254
+    },
+    {
+      "path": "assets/media/b9cbc67686eb1be60bc8.webp",
+      "type": "image/webp",
+      "bytes": 75748,
+      "original": "Turtle Soup / art-breakdown/ta-engraving-detail.png",
+      "width": 922,
+      "height": 864
     }
   ],
   "thumbnails": {
@@ -1109,6 +1365,198 @@
       "width": 676,
       "height": 720,
       "bytes": 85760
+    },
+    "assets/media/8719432dd18346fc4abb.webp": {
+      "src": "assets/media/ac17ff6ed38cfcea0b17.webp",
+      "bytes": 27000,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/78dcb0201d7dfdf5dd86.webp": {
+      "src": "assets/media/bd2d451775cd31535ed8.webp",
+      "bytes": 20250,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/fd81bcc1b9074ff457c2.webp": {
+      "src": "assets/media/610c960314d15b17303f.webp",
+      "bytes": 31566,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/3d722b521668d2293de5.webp": {
+      "src": "assets/media/a8a723a0ac22183653f7.webp",
+      "bytes": 9766,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/85a32cbb20262ccee1ab.webp": {
+      "src": "assets/media/6fec875d9355174f4cf5.webp",
+      "bytes": 1584,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/d866747a18871bb378ee.webp": {
+      "src": "assets/media/58d55632c14748974a26.webp",
+      "bytes": 15936,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/c0a6bfe49e61a6c4f12d.webp": {
+      "src": "assets/media/da62999a06a02c38228f.webp",
+      "bytes": 17932,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/7920ff671d91f45e9300.webp": {
+      "src": "assets/media/2a081292ca8fee4f3dbf.webp",
+      "bytes": 19454,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/fd46f2ec8e05d8153f8b.webp": {
+      "src": "assets/media/02f15fc85a37ed7b474f.webp",
+      "bytes": 30476,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/460ef76497031f67be78.webp": {
+      "src": "assets/media/e1d5a426eb609924adf4.webp",
+      "bytes": 22688,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/bcf29b733d2dfc0551a7.webp": {
+      "src": "assets/media/f4bdc138d627e60ff0a1.webp",
+      "bytes": 16268,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/ab28274509bea9b027bc.webp": {
+      "src": "assets/media/81a0af106ac134589f19.webp",
+      "bytes": 27694,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/fbf060d341382210372a.webp": {
+      "src": "assets/media/197c580d0fafd1666d47.webp",
+      "bytes": 30980,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/eee14a8499fe94639121.webp": {
+      "src": "assets/media/73fcf3e0f6977529768f.webp",
+      "bytes": 32722,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/962bd6c54eb8909fd785.webp": {
+      "src": "assets/media/39b60c5ff59e751bf419.webp",
+      "bytes": 32214,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/98b16bed35ba32e377f6.webp": {
+      "src": "assets/media/e5fa86c63ffb83256270.webp",
+      "bytes": 31298,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/4bf72fdbe3eff4562a72.webp": {
+      "src": "assets/media/4af742a31c616fde956f.webp",
+      "bytes": 26918,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/224104207ad5768db0b9.webp": {
+      "src": "assets/media/2ef61c54d160d68c6478.webp",
+      "bytes": 26898,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/bd6347f81f0e0fa0a995.webp": {
+      "src": "assets/media/4526fa2d458e22b38196.webp",
+      "bytes": 26660,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/ad11e9fda961d47b22eb.webp": {
+      "src": "assets/media/2a679aba53a4722be98d.webp",
+      "bytes": 30506,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/246899ab72639ca22457.webp": {
+      "src": "assets/media/3573149ec9b150a81d81.webp",
+      "bytes": 22760,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/dac1403fa63c09b33679.webp": {
+      "src": "assets/media/835fa00cab6007b8c07f.webp",
+      "bytes": 22272,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/c1ee4a902fb23ff370a5.webp": {
+      "src": "assets/media/1e483290ef3f63396b30.webp",
+      "bytes": 22766,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/38e44edc5cdc848a7166.webp": {
+      "src": "assets/media/4d999bb7d1aacdc685db.webp",
+      "bytes": 23008,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/e3beaeaa9ec21a084b53.webp": {
+      "src": "assets/media/52af0e8b0c9862abe4ac.webp",
+      "bytes": 23784,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/1848817ec233080a3acf.webp": {
+      "src": "assets/media/39a12c75a5189cdf9dd5.webp",
+      "bytes": 18462,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/7df46e0131a84bba6e35.webp": {
+      "src": "assets/media/6b0130e46e782af3bf8e.webp",
+      "bytes": 27224,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/a49eb7bb8b4670b8e73d.webp": {
+      "src": "assets/media/b8aa382e3e7ce99fc27e.webp",
+      "bytes": 18218,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/02dc66bbb239f76c1fb5.webp": {
+      "src": "assets/media/3e1d5f966b09e50000b3.webp",
+      "bytes": 7880,
+      "width": 720,
+      "height": 405
+    },
+    "assets/media/299418aaea3fae8902d1.webp": {
+      "src": "assets/media/fd764da85730922a97fb.webp",
+      "bytes": 5872,
+      "width": 256,
+      "height": 256
+    },
+    "assets/media/40c95f8579fd0a123da0.webp": {
+      "src": "assets/media/b0faa143ec4f9b8c3447.webp",
+      "bytes": 18788,
+      "width": 720,
+      "height": 720
+    },
+    "assets/media/b9cbc67686eb1be60bc8.webp": {
+      "src": "assets/media/6784dcd1ea13e83b37dd.webp",
+      "bytes": 33290,
+      "width": 720,
+      "height": 675
     }
   }
 }

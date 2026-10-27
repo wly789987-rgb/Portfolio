@@ -10,3 +10,6 @@ __pycache__/
 .env.*
 *.pem
 *.key
+
+# Local capture originals and generated deliverables
+output/

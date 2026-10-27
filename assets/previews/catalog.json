@@ -75,5 +75,151 @@
     "start": 8,
     "seconds": 4,
     "fps": 6
+  },
+  {
+    "name": "turtle-opening",
+    "title": "开场引导 · 展示剪辑",
+    "src": "assets/previews/91065019d2dbc6dae750.gif",
+    "poster": "assets/previews/8d73641601573ef4ecda.webp",
+    "bytes": 19277681,
+    "frames": 183,
+    "source": "Turtle Soup / Captures/PortfolioOpening-20261027/20261027-112955",
+    "start": 0,
+    "seconds": 33.32,
+    "fps": "variable / captured ~5.4 fps",
+    "captureMode": "Play Mode / actual screen output",
+    "complete": false,
+    "sourceCaptureCompleted": true,
+    "sourceDuration": 62.69554138183594,
+    "keptIntervals": [
+      [
+        0.0,
+        20.8
+      ],
+      [
+        50.2,
+        62.69554138183594
+      ]
+    ]
+  },
+  {
+    "name": "turtle-standard",
+    "title": "常规 · 暖色烛光",
+    "src": "assets/previews/0744799c6b9867e8cb0e.gif",
+    "poster": "assets/previews/58120fd198ee48ed4491.webp",
+    "bytes": 868312,
+    "frames": 32,
+    "source": "Turtle Soup / Captures/ThemeAtmosphereV4/Standard",
+    "start": 12,
+    "seconds": 6.4,
+    "fps": 5
+  },
+  {
+    "name": "turtle-mildhorror",
+    "title": "微恐 · 青色薄雾",
+    "src": "assets/previews/fdb5bf12c1b239c2434a.gif",
+    "poster": "assets/previews/4759d337554e38bffd73.webp",
+    "bytes": 710130,
+    "frames": 32,
+    "source": "Turtle Soup / Captures/ThemeAtmosphereV4/MildHorror",
+    "start": 12,
+    "seconds": 6.4,
+    "fps": 5
+  },
+  {
+    "name": "turtle-horror",
+    "title": "恐怖 · 冷色与红光",
+    "src": "assets/previews/4bb360db9882cbf0017d.gif",
+    "poster": "assets/previews/eb063ddd3772eaec9f5e.webp",
+    "bytes": 765259,
+    "frames": 32,
+    "source": "Turtle Soup / Captures/ThemeAtmosphereV4/Horror",
+    "start": 12,
+    "seconds": 6.4,
+    "fps": 5
+  },
+  {
+    "name": "turtle-entertainment",
+    "title": "娱乐 · 彩色氛围",
+    "src": "assets/previews/ac9ca8154e7bc7c9d1e9.gif",
+    "poster": "assets/previews/b85d41ce37dea9a291d9.webp",
+    "bytes": 682849,
+    "frames": 32,
+    "source": "Turtle Soup / Captures/ThemeAtmosphereV4/Entertainment",
+    "start": 12,
+    "seconds": 6.4,
+    "fps": 5
+  },
+  {
+    "name": "hangzhou-play",
+    "title": "游玩方式 · 选角到结算",
+    "src": "assets/previews/1142e5826ae411484021.gif",
+    "poster": "assets/previews/44d9a5ce147d1f325593.webp",
+    "bytes": 1017967,
+    "frames": 70,
+    "source": "杭城大亨工程选角、围桌与阶段对局截图",
+    "start": 0,
+    "seconds": 7.0,
+    "fps": 10
+  },
+  {
+    "name": "hangzhou-xixi",
+    "title": "西溪旅人 · 眨眼说话",
+    "src": "assets/previews/0e6eb438aee78dcb331f.gif",
+    "poster": "assets/previews/ca4416e5456e40dcf538.webp",
+    "bytes": 53594,
+    "frames": 33,
+    "source": "NewFourCharacterAnimations/Review",
+    "start": 0,
+    "seconds": 2.75,
+    "fps": 12
+  },
+  {
+    "name": "hangzhou-yunqi",
+    "title": "云栖创客 · 眨眼说话",
+    "src": "assets/previews/b84738c77c639963affb.gif",
+    "poster": "assets/previews/79616a054f50323a24a5.webp",
+    "bytes": 54691,
+    "frames": 33,
+    "source": "NewFourCharacterAnimations/Review",
+    "start": 0,
+    "seconds": 2.75,
+    "fps": 12
+  },
+  {
+    "name": "hangzhou-hubin",
+    "title": "湖滨织锦师 · 眨眼说话",
+    "src": "assets/previews/1bb71e277b2d4d7694e7.gif",
+    "poster": "assets/previews/f02a0a7d556f427f99a8.webp",
+    "bytes": 59324,
+    "frames": 33,
+    "source": "NewFourCharacterAnimations/Review",
+    "start": 0,
+    "seconds": 2.75,
+    "fps": 12
+  },
+  {
+    "name": "hangzhou-qianjiang",
+    "title": "钱江灯匠 · 眨眼说话",
+    "src": "assets/previews/d597f3b4c10063ac0da7.gif",
+    "poster": "assets/previews/72d0da387c7eb56b3f46.webp",
+    "bytes": 58797,
+    "frames": 33,
+    "source": "NewFourCharacterAnimations/Review",
+    "start": 0,
+    "seconds": 2.75,
+    "fps": 12
+  },
+  {
+    "name": "turtle-candle",
+    "title": "蜡烛交互 · 指针拨焰",
+    "src": "assets/previews/effaadd3b7143b37076c.gif",
+    "poster": "assets/previews/b528aecc051769178e23.webp",
+    "bytes": 3556170,
+    "frames": 56,
+    "source": "Turtle Soup / Captures/CandleInteraction",
+    "start": 0,
+    "seconds": 2.8,
+    "fps": 20
   }
 ]
