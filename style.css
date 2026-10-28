@@ -396,3 +396,47 @@ body[data-technology-hidden="true"] .portfolio-modules { grid-template-columns: 
 @media(max-width:700px) { .turtle-art-triple { grid-template-columns: minmax(0,1fr); } }
 
 .turtle-art-grid figure { margin: 0; min-width: 0; }
+
+.turtle-process { margin-block: 36px; }
+.turtle-process h4 { font-size: 17px; margin: 0 0 10px; line-height: 1.5; }
+.turtle-process p { font-size: 16px; line-height: 1.8; }
+.ta-workflow { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 18px; padding: 0; list-style: none; counter-reset: ta-step; }
+.ta-workflow li { counter-increment: ta-step; padding: 20px; border: 1px solid var(--line); border-radius: 10px; background: #101c29; }
+.ta-workflow li::before { content: counter(ta-step,decimal-leading-zero); display: block; margin-bottom: 12px; color: var(--cyan); font-size: 14px; }
+.ta-workflow p { color: var(--muted); margin: 0; }
+.ta-metric { font-size: 24px; color: var(--cyan); display: block; margin-bottom: 12px; }
+@media(max-width:700px) { .ta-workflow { grid-template-columns: minmax(0,1fr); } }
+
+.turtle-topic { margin: 40px 0; padding-top: 30px; border-top: 1px solid var(--line); }
+.turtle-topic > h3 { font-size: 23px; line-height: 1.5; margin: 8px 0 14px; }
+.turtle-topic > .eyebrow { margin: 0; }
+.turtle-motion { margin: 22px 0; }
+.turtle-motion figcaption { color: var(--muted); margin-bottom: 12px; font-size: 14px; }
+.turtle-extra { padding: 20px 0; border-top: 1px solid var(--line); margin-top: 24px; }
+.turtle-extra > summary { cursor: pointer; min-height: 44px; font-size: 16px; color: var(--cyan); }
+.turtle-topic .technical-breakdown h4 { font-size: 17px; margin: 0 0 12px; }
+.turtle-topic .technical-breakdown p { font-size: 16px; }
+@media(max-width:700px){.turtle-topic > h3 {font-size:20px;}}
+
+/* Technical-art introduction: role first, toolchain second. */
+.hero-highlights a { gap: 7px; min-width: 0; }
+.hero-highlights strong { font-family: inherit; font-size: 22px; letter-spacing: .02em; }
+.hero-highlights span { font-size: 14px; overflow-wrap: anywhere; }
+.hero-highlights .highlight-tools { color: #c0d0df; font-size: 14px; line-height: 1.7; }
+@media (max-width: 700px) {
+  .hero-highlights { gap: 24px; }
+  .hero-highlights strong { font-size: 20px; }
+  .hero-highlights span, .hero-highlights .highlight-tools { font-size: 16px; }
+}
+
+/* Resume responsibilities: compact, scannable timeline entries. */
+.timeline .experience-duties { margin: 7px 0 0; padding-left: 17px; color: var(--muted); font-size: 11px; line-height: 1.8; }
+.timeline .experience-duties li + li { margin-top: 6px; }
+.timeline .experience-duties li::marker { color: #7295a8; }
+.timeline article { padding-bottom: 28px; }
+
+
+/* One heading for the work collection; no redundant module card. */
+.works > .section-heading { flex-direction: column; align-items: flex-start; gap: 12px; margin-bottom: 28px; }
+.works > .section-heading > p { max-width: none; margin: 0; }
+.works > .section-heading .eyebrow { margin-bottom: 10px; }

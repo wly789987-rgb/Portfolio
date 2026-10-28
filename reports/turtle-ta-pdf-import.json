@@ -1,0 +1,34 @@
+{
+  "pdf": "D:\\wly\\unity\\Turtle Soup\\output\\portfolio-ta\\汤之馆-AI赋能技术美术-作品集.pdf",
+  "pdfSHA256": "624fbead90fc952f1adcfedcd80b483bdd0e0f645f3c0eecee6e9a385d72d4d6",
+  "assets": [
+    {
+      "key": "ta-concept-opening",
+      "source": "Docs/Art/Concepts/souphouse-opening-first-shot-v01.png",
+      "caption": "AI 开场概念 · 视觉探索，非实机",
+      "sha256": "5b0793f21ad461362c8af7b0144899e5ccfe108669c080e99a094eaadd420c7a"
+    },
+    {
+      "key": "ta-concept-selection",
+      "source": "Docs/Art/Concepts/souphouse-mystery-selection-v01.png",
+      "caption": "AI 选案概念 · 多故事探索，非实机",
+      "sha256": "29eba360f9b06b43f702fcd35bf6860344f4767db9f7e752af799194b47dba2b"
+    },
+    {
+      "key": "ta-concept-reading",
+      "source": "Docs/Art/Concepts/汤之馆后续场景-v01/03-story-introduction.png",
+      "caption": "AI 汤面概念 · 单视角视觉探索，非实机",
+      "sha256": "a5999e83c03f0379bac1774d03e8ce717c1a3fbebbae0beec7b1fe963f1449e4"
+    },
+    {
+      "key": "ta-reveal-illustration",
+      "source": "Captures/RevealIllustrations-v1/RevealIllustration-02.png",
+      "caption": "五幕回放第二幕 · 已有运行验收截图",
+      "sha256": "dfec55c54f1f6a34096bcbdfb2d49c03db29ea794c224fbb0d9d8c0734b2245f"
+    }
+  ],
+  "evidenceDocs": [
+    "Docs/Reviews/2026-10-27-selected-fixes.md",
+    "Docs/Art/汤之馆-场景素材与优化-v01.md"
+  ]
+}

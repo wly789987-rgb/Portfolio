@@ -1,0 +1,519 @@
+{
+  "source": "C:\\Users\\ailinker-intel\\Documents\\Codex\\2026-10-12\\x\\outputs\\作品集图片提取-2026",
+  "count": 57,
+  "records": [
+    {
+      "project": "solar-vr",
+      "id": "P17-01",
+      "title": "地球材质 · Unity 工程界面",
+      "source": "原图\\P17\\P17-01.jpg",
+      "sourceSHA256": "8156e5056895332f6e698c0a9c9d88dc28680c891915937ae9e29097d71efc9f",
+      "web": "assets/media/b1fc4e24f9ae4e39176e.webp",
+      "bytes": 135620
+    },
+    {
+      "project": "solar-vr",
+      "id": "P17-02",
+      "title": "太阳系 · 天体与轨道",
+      "source": "原图\\P17\\P17-02.jpg",
+      "sourceSHA256": "60d124a09dd8e136656c23bac55562a1c170abd85eb836b9853600354180fc7d",
+      "web": "assets/media/e6b94eecb9cc0c6bdeb8.webp",
+      "bytes": 78518
+    },
+    {
+      "project": "solar-vr",
+      "id": "P18-01",
+      "title": "太阳系场馆 · 空间布局",
+      "source": "原图\\P18\\P18-01.jpg",
+      "sourceSHA256": "b547c61c1d390c6758f203bed94fc751b73bf928cf27eb99084eeacc74a12faa",
+      "web": "assets/media/1121a09d0d1e7cd92ffa.webp",
+      "bytes": 172072
+    },
+    {
+      "project": "solar-vr",
+      "id": "P18-02",
+      "title": "太阳 · 表面与粒子效果",
+      "source": "原图\\P18\\P18-02.jpg",
+      "sourceSHA256": "6b47a56a217359fac375e386eb59df132aa8966d384ea8d155802e04f9c356cd",
+      "web": "assets/media/5783a337c61c54593677.webp",
+      "bytes": 56278
+    },
+    {
+      "project": "solar-vr",
+      "id": "P18-03",
+      "title": "黑洞 · 空间特效",
+      "source": "原图\\P18\\P18-03.jpg",
+      "sourceSHA256": "005ccaa4b552a254ab45cd0841d9b5cd5f423f2268ee29e87dbf60e7ca79d76a",
+      "web": "assets/media/dd6258752d9d04a58bf6.webp",
+      "bytes": 85656
+    },
+    {
+      "project": "solar-vr",
+      "id": "P19-01",
+      "title": "场馆通道 · 霓虹材质",
+      "source": "原图\\P19\\P19-01.jpg",
+      "sourceSHA256": "cc1057d7ccfc4035679130abe8e252935bdc8f89798e716b561161858e55ce86",
+      "web": "assets/media/54e965e3a0e806db323c.webp",
+      "bytes": 191612
+    },
+    {
+      "project": "solar-vr",
+      "id": "P19-02",
+      "title": "天体装置 · 环形结构",
+      "source": "原图\\P19\\P19-02.jpg",
+      "sourceSHA256": "0485e9d2fefb72ab2454137c85b6ac652f238395372216bf024b71516d0eaa97",
+      "web": "assets/media/fc42260559ac564e74bb.webp",
+      "bytes": 160864
+    },
+    {
+      "project": "solar-vr",
+      "id": "P19-03",
+      "title": "知识展区 · 场景陈列",
+      "source": "原图\\P19\\P19-03.jpg",
+      "sourceSHA256": "7bc6eedb20f5107f3d13436229ab007ddb2f21d4b4eedf5e5811a1c78757d884",
+      "web": "assets/media/84167c587a0412664acb.webp",
+      "bytes": 303404
+    },
+    {
+      "project": "water",
+      "id": "P25-01",
+      "title": "风格化水体 · Unity 场景画面",
+      "source": "原图\\P25\\P25-01.jpg",
+      "sourceSHA256": "8dbd363686b00727d3946e3732c10577d90a44ff8e15e45be024942f97fe90d7",
+      "web": "assets/media/c52fa10218d1e629167d.webp",
+      "bytes": 88874
+    },
+    {
+      "project": "water",
+      "id": "page-25",
+      "title": "水体 Shader · 原作品集制作标注",
+      "source": "页面预览\\page-25.jpg",
+      "sourceSHA256": "fac43bcc46aa265ce73645ed45450df87320bd4e9f0eff1a2c7940e37c2dcc16",
+      "web": "assets/media/b652de4f542fea3e9ffb.webp",
+      "bytes": 35484
+    },
+    {
+      "project": "nba",
+      "id": "P09-02",
+      "title": "元宇宙主场景",
+      "source": "原图\\P09\\P09-02.jpg",
+      "sourceSHA256": "c8f577dc5faa6ecfe58f94f5fbd50d2dff0cd4e0347e6ffca9f861fc6542cad2",
+      "web": "assets/media/c3667582568cc7355698.webp",
+      "bytes": 187854
+    },
+    {
+      "project": "nba",
+      "id": "P10-06",
+      "title": "活动与内容入口",
+      "source": "原图\\P10\\P10-06.jpg",
+      "sourceSHA256": "3e52a8415eb8b02cbaa9f8349af340fc56041d62f44fb5f02b6533b071e6f90f",
+      "web": "assets/media/244016d07645125874ee.webp",
+      "bytes": 105374
+    },
+    {
+      "project": "nba",
+      "id": "P10-05",
+      "title": "虚拟角色展示",
+      "source": "原图\\P10\\P10-05.jpg",
+      "sourceSHA256": "086b5e3871f188ff7da9bafd9ad2e10ecf8c1fca54d3c95357a4eaa35fac0ba8",
+      "web": "assets/media/8939f3305b5da899503e.webp",
+      "bytes": 101188
+    },
+    {
+      "project": "nba",
+      "id": "P10-04",
+      "title": "角色试装界面",
+      "source": "原图\\P10\\P10-04.jpg",
+      "sourceSHA256": "f5a102f2fdb4b83ad2a05c73cb696e3e3e782e9124627d2a72404a1749d039c1",
+      "web": "assets/media/f06e1be84691337a17ce.webp",
+      "bytes": 125330
+    },
+    {
+      "project": "nba",
+      "id": "P10-07",
+      "title": "服饰选择界面",
+      "source": "原图\\P10\\P10-07.jpg",
+      "sourceSHA256": "b659966dd7c2ee2f7178140ee7d4a62e2e786a9f10b1e530a23c5fc8a24bd217",
+      "web": "assets/media/90c9646cab5529c6cb13.webp",
+      "bytes": 51468
+    },
+    {
+      "project": "nba",
+      "id": "P11-04",
+      "title": "投篮交互 · 主场景",
+      "source": "原图\\P11\\P11-04.jpg",
+      "sourceSHA256": "1e9445a571ed2c0a65f4833b8ab492423e7d0d1238bdb9fc3373a636e4d467f0",
+      "web": "assets/media/0a86da71dbf560835ddb.webp",
+      "bytes": 231382
+    },
+    {
+      "project": "nba",
+      "id": "P11-05",
+      "title": "特效与装扮 · 移动端展示",
+      "source": "原图\\P11\\P11-05.jpg",
+      "sourceSHA256": "1f80ee36d20109df59894a809941adc1a55e45a9dcc910424c9be76a9947635f",
+      "web": "assets/media/21640af3e09cd7d9e14c.webp",
+      "bytes": 169566
+    },
+    {
+      "project": "nba",
+      "id": "P11-06",
+      "title": "虚拟角色 · 移动端展示",
+      "source": "原图\\P11\\P11-06.jpg",
+      "sourceSHA256": "775b152a3e5a2135b7514631187c2e0c1423116a3bd20bd45ef90228a532bd68",
+      "web": "assets/media/d024032cee8edd844560.webp",
+      "bytes": 138702
+    },
+    {
+      "project": "nba",
+      "id": "P12-01",
+      "title": "八款角色服饰 · 整体展示",
+      "source": "原图\\P12\\P12-01.jpg",
+      "sourceSHA256": "dfec85adf6a6160cda49148412e2d17386eaa9d8106ee749997926cf9f9e3da2",
+      "web": "assets/media/c8a9005c9b532f383234.webp",
+      "bytes": 84604
+    },
+    {
+      "project": "nba",
+      "id": "P12-02",
+      "title": "角色服饰 · 造型一",
+      "source": "原图\\P12\\P12-02.jp2",
+      "sourceSHA256": "ce689bb1df7604e9dfbe7fdf8eefd9a1b3bbd02a8bb713c3ec09ea3df25acf2e",
+      "web": "assets/media/b08e5ea07f709018dd55.webp",
+      "bytes": 66532
+    },
+    {
+      "project": "nba",
+      "id": "P12-03",
+      "title": "角色服饰 · 造型二",
+      "source": "原图\\P12\\P12-03.jp2",
+      "sourceSHA256": "c16d9f4e506939d877085ecb5cd5af728ecc051346a52156ee572ff5cf4ab159",
+      "web": "assets/media/43813e5384acc5b4f441.webp",
+      "bytes": 46316
+    },
+    {
+      "project": "nba",
+      "id": "P12-04",
+      "title": "角色服饰 · 造型三",
+      "source": "原图\\P12\\P12-04.jp2",
+      "sourceSHA256": "238a2398f6a851964131b626e293e9b86ecc2892296386a96b0bc2d39b721e3a",
+      "web": "assets/media/469dd7bec7a1eeb55f37.webp",
+      "bytes": 44154
+    },
+    {
+      "project": "nba",
+      "id": "P12-05",
+      "title": "角色服饰 · 造型四",
+      "source": "原图\\P12\\P12-05.jp2",
+      "sourceSHA256": "9c1223163581cc0f26778c8dd923a4e06f22d4678177274c485f3e70b9decfcb",
+      "web": "assets/media/0e22f6894e543101946e.webp",
+      "bytes": 43532
+    },
+    {
+      "project": "nba",
+      "id": "P13-01",
+      "title": "角色服饰 · 组合展示",
+      "source": "原图\\P13\\P13-01.jpg",
+      "sourceSHA256": "adeb01eb0de4722561231029e35a5ac11a10b12d3ec8a510d6220c37e77365dd",
+      "web": "assets/media/aacf71603d73083c626d.webp",
+      "bytes": 164012
+    },
+    {
+      "project": "nba",
+      "id": "P13-02",
+      "title": "数字藏品 · 陈列场景",
+      "source": "原图\\P13\\P13-02.jpg",
+      "sourceSHA256": "84314b74e0b15bfb291d7da743f32ac496d3234e2bea10654e1184bc7e05d7d8",
+      "web": "assets/media/38f86164f29b7c7d4153.webp",
+      "bytes": 236784
+    },
+    {
+      "project": "nba",
+      "id": "P13-03",
+      "title": "藏品展示 · 材质与灯光",
+      "source": "原图\\P13\\P13-03.jpg",
+      "sourceSHA256": "da105aceea487d4d79ad84c706f430f7a2050046f16e7db274645bc4a3e193a1",
+      "web": "assets/media/0f71ecaac891b8f41b4a.webp",
+      "bytes": 83068
+    },
+    {
+      "project": "nba",
+      "id": "P14-01",
+      "title": "蓝色能量特效 · 连续状态",
+      "source": "原图\\P14\\P14-01.jp2",
+      "sourceSHA256": "f985f75342533619d497048655cdfa0a2c489594b3f704cc84a0b2b76675eb60",
+      "web": "assets/media/97116e161d77ad481185.webp",
+      "bytes": 90130
+    },
+    {
+      "project": "nba",
+      "id": "P14-02",
+      "title": "金色环形特效 · 连续状态",
+      "source": "原图\\P14\\P14-02.jpg",
+      "sourceSHA256": "8b7ed5543b01667282438558e9fdb501716023c453fd128f31dd54d84d2f1980",
+      "web": "assets/media/49c9a4854a872d53e2a2.webp",
+      "bytes": 75438
+    },
+    {
+      "project": "nba",
+      "id": "P14-03",
+      "title": "金色环形特效 · 展示画面",
+      "source": "原图\\P14\\P14-03.jpg",
+      "sourceSHA256": "1b2da97cc0c37f9a7232098ed13677a90d28e7c32861d02e83f40b9024296525",
+      "web": "assets/media/261c207e8a67db7cd6ec.webp",
+      "bytes": 77900
+    },
+    {
+      "project": "nba",
+      "id": "P14-04",
+      "title": "蓝色能量特效 · 展示画面",
+      "source": "原图\\P14\\P14-04.jpg",
+      "sourceSHA256": "4a6e26e026618d6d8c363a8a40b9ba8e0cc3e579d026924f11a658e59aac1afe",
+      "web": "assets/media/6dbfc4c1ac449d92f938.webp",
+      "bytes": 78028
+    },
+    {
+      "project": "nba",
+      "id": "P15-01",
+      "title": "道具与服饰 · 资源列表",
+      "source": "原图\\P15\\P15-01.jpg",
+      "sourceSHA256": "848de59b40549300078373ebcd7a3406fa5a66331619584bbb5555fd87e51282",
+      "web": "assets/media/5911cba4d356232f9f9e.webp",
+      "bytes": 87038
+    },
+    {
+      "project": "nba",
+      "id": "P15-02",
+      "title": "图标与内容资源",
+      "source": "原图\\P15\\P15-02.jpg",
+      "sourceSHA256": "f593bfb83c03a77cdb7e8ad99d06149f39b9c3dc54c40b306a297b5babbdb497",
+      "web": "assets/media/285524dff06ef9f13886.webp",
+      "bytes": 32696
+    },
+    {
+      "project": "nba",
+      "id": "P15-03",
+      "title": "场景资产 · 工程资源",
+      "source": "原图\\P15\\P15-03.jpg",
+      "sourceSHA256": "e97fceb6f7f7767da7b95a1618a3ebc88bf2b84c2861e9b269c0dc225acc5a8e",
+      "web": "assets/media/2963fd448426d33c6de7.webp",
+      "bytes": 86138
+    },
+    {
+      "project": "nba",
+      "id": "P15-04",
+      "title": "角色资源 · 资产列表",
+      "source": "原图\\P15\\P15-04.jpg",
+      "sourceSHA256": "5f94019c884f4a7b8415c9212fecb84c532b8ce751175e005f98f3e5fbc5c38b",
+      "web": "assets/media/6d9382645b33cbb77ae3.webp",
+      "bytes": 32960
+    },
+    {
+      "project": "nba",
+      "id": "P15-05",
+      "title": "项目视觉内容 · 汇总",
+      "source": "原图\\P15\\P15-05.jpg",
+      "sourceSHA256": "dc544f31a0ec11452c4ab62649f891890f187eb11183a3d284dde9a35ed6088f",
+      "web": "assets/media/9895162afe887a2fff23.webp",
+      "bytes": 104578
+    },
+    {
+      "project": "alien-vr",
+      "id": "P20-01",
+      "title": "地球与空间站 · 项目场景",
+      "source": "原图\\P20\\P20-01.jpg",
+      "sourceSHA256": "8f8e9bf8904996611aebd5e130104f90f4331a92de947e0d85c2fc8eef236d0c",
+      "web": "assets/media/1ead0d40d95a5cf2d060.webp",
+      "bytes": 149462
+    },
+    {
+      "project": "alien-vr",
+      "id": "P21-01",
+      "title": "线下装置 · 阵列结构",
+      "source": "原图\\P21\\P21-01.jpg",
+      "sourceSHA256": "354eb87c58d93201dfde84822a7c0808c2177abb76227f3bf8297c1424910076",
+      "web": "assets/media/c84dff5d9353bcadc880.webp",
+      "bytes": 258268
+    },
+    {
+      "project": "alien-vr",
+      "id": "P21-02",
+      "title": "线下场馆 · 视觉环境",
+      "source": "原图\\P21\\P21-02.jpg",
+      "sourceSHA256": "e937fac5279774c0e532d98df3d0a0e740785575987a81a23ed5fd704dd4fe70",
+      "web": "assets/media/b582108b0e4aead0665b.webp",
+      "bytes": 130644
+    },
+    {
+      "project": "alien-vr",
+      "id": "P21-03",
+      "title": "线下场馆 · 建筑外景",
+      "source": "原图\\P21\\P21-03.jpg",
+      "sourceSHA256": "4d75093946bc61194b0d2336b65a099bba48728d4b13f0e6eb35ca705b70c747",
+      "web": "assets/media/9eac577701de38c4b9b2.webp",
+      "bytes": 512190
+    },
+    {
+      "project": "alien-vr",
+      "id": "P21-04",
+      "title": "场馆内部 · 体验空间",
+      "source": "原图\\P21\\P21-04.jpg",
+      "sourceSHA256": "e7cd5675d74ea225b01c4f7ddab58e3445c82a6d822bcdadd324f5d3b7dd0eb4",
+      "web": "assets/media/3690742782d1d8bcfff5.webp",
+      "bytes": 176632
+    },
+    {
+      "project": "alien-vr",
+      "id": "P22-01",
+      "title": "探索空间 · 场景全貌",
+      "source": "原图\\P22\\P22-01.jpg",
+      "sourceSHA256": "3f4b9ef189de9f3c79735b2c7aa43df7532809821e0e3cce36cc69651c7ac3fc",
+      "web": "assets/media/30ca92f0bb223f5b7c40.webp",
+      "bytes": 180580
+    },
+    {
+      "project": "alien-vr",
+      "id": "P22-02",
+      "title": "探索空间 · 能量装置",
+      "source": "原图\\P22\\P22-02.jpg",
+      "sourceSHA256": "e21039c12173a5b11d47981262725cf58293aa92a02f7828ff3fbb88e2ec6eed",
+      "web": "assets/media/f4fcf1830deb69f3309f.webp",
+      "bytes": 126258
+    },
+    {
+      "project": "alien-vr",
+      "id": "P22-03",
+      "title": "座舱 · 交互视角",
+      "source": "原图\\P22\\P22-03.jpg",
+      "sourceSHA256": "a26b3cbcebdf4a02311b41340931c2c0e5537f4a8f629a0494de4a86a4a7ccce",
+      "web": "assets/media/6aacf691338702adfcea.webp",
+      "bytes": 110846
+    },
+    {
+      "project": "alien-vr",
+      "id": "P23-01",
+      "title": "空间设施 · 场景构图",
+      "source": "原图\\P23\\P23-01.jpg",
+      "sourceSHA256": "a6cf4dbc6b5f785c5da9b4ed88a490e7ee5ef9bc3c66cf7e487f71daad3fdbd5",
+      "web": "assets/media/cebfca99057b64fad2bb.webp",
+      "bytes": 146062
+    },
+    {
+      "project": "alien-vr",
+      "id": "P23-02",
+      "title": "通道 · 空间关系",
+      "source": "原图\\P23\\P23-02.jpg",
+      "sourceSHA256": "3e982da8c984d7ee78fee68f2f94856ca273990397e1cc3286fb4d431ce43052",
+      "web": "assets/media/e4b575c6483ba8d4335e.webp",
+      "bytes": 152108
+    },
+    {
+      "project": "alien-vr",
+      "id": "P23-03",
+      "title": "能量区域 · 灯光与氛围",
+      "source": "原图\\P23\\P23-03.jpg",
+      "sourceSHA256": "1b6db8cfec0c8a748698fc20eeba2b67b70627361fb36af162a7ad6bb0413c3c",
+      "web": "assets/media/41a6d6bf6ea7eccdc560.webp",
+      "bytes": 137634
+    },
+    {
+      "project": "evil-hero",
+      "id": "P04-01",
+      "title": "线下围桌试玩",
+      "source": "原图\\P04\\P04-01.jpg",
+      "sourceSHA256": "e1890021dbcb5e22fb3e654aa6f8474049858ac01e4fc30ea3afdefaa7793aec",
+      "web": "assets/media/a2b6d61bc5cdadc3073e.webp",
+      "bytes": 213078
+    },
+    {
+      "project": "evil-hero",
+      "id": "P05-01",
+      "title": "主角与武器 · 多视图",
+      "source": "原图\\P05\\P05-01.png",
+      "sourceSHA256": "8721add26b9858aa1bac2cdc3181e37d5c83ef10bf7f37df8674714b2dee2abd",
+      "web": "assets/media/4e392193405c3f6bbf28.webp",
+      "bytes": 107946
+    },
+    {
+      "project": "evil-hero",
+      "id": "P05-02",
+      "title": "怪物与装备 · 多视图",
+      "source": "原图\\P05\\P05-02.png",
+      "sourceSHA256": "892c26351c349e3d64e41b74e760d69b09e43859c2ce09961bd0c4646b5c6ec4",
+      "web": "assets/media/3cd51b4a43df055bedc2.webp",
+      "bytes": 82796
+    },
+    {
+      "project": "evil-hero",
+      "id": "P06-01",
+      "title": "森林战场 · 多路线路径",
+      "source": "原图\\P06\\P06-01.jpg",
+      "sourceSHA256": "7d6fedb2dddfc0346bb2eac35becbf0282ab4b12c751d59bacbdf52fd1650c30",
+      "web": "assets/media/e8b98860492bc67ae768.webp",
+      "bytes": 323230
+    },
+    {
+      "project": "evil-hero",
+      "id": "P06-02",
+      "title": "熔岩战场 · 首领区域",
+      "source": "原图\\P06\\P06-02.jpg",
+      "sourceSHA256": "8b73e2d2ea8bbb872e289b6326e66b44556778e151842220418a4b3b2f154710",
+      "web": "assets/media/98ddf055347d19469998.webp",
+      "bytes": 283486
+    },
+    {
+      "project": "evil-hero",
+      "id": "page-05",
+      "title": "角色资产 · 原作品集制作标注",
+      "source": "页面预览\\page-05.jpg",
+      "sourceSHA256": "1fd38f77477831598efa3f9998251385f1d5816abfc5629e8085fcc65cbdea7e",
+      "web": "assets/media/d1dec5856aa004794442.webp",
+      "bytes": 37148
+    },
+    {
+      "project": "evil-hero",
+      "id": "page-06",
+      "title": "关卡场景 · 原作品集制作标注",
+      "source": "页面预览\\page-06.jpg",
+      "sourceSHA256": "fe5abd64d22b384ce3e1db1df85bbb0d366757f8491dbca863adccfdc65af204",
+      "web": "assets/media/014612929e4ab3c8ff43.webp",
+      "bytes": 74164
+    },
+    {
+      "project": "dark-forest",
+      "id": "page-08",
+      "title": "卡牌体系 · 原作品集制作标注",
+      "source": "页面预览\\page-08.jpg",
+      "sourceSHA256": "f0efe7ba360e3417df01c732d500ee59a0beea840ac48387d89cb40f09ce6de4",
+      "web": "assets/media/938f61dbe7d87981aace.webp",
+      "bytes": 57760
+    },
+    {
+      "project": "hologram",
+      "id": "P24-01",
+      "title": "数字人 · Unity 展示画面",
+      "source": "原图\\P24\\P24-01.jpg",
+      "sourceSHA256": "a222da945625f46135cce4279616eedd70532bf366ad061425d6df60327e4836",
+      "web": "assets/media/5fd34ac5c67de11f2d93.webp",
+      "bytes": 28850
+    },
+    {
+      "project": "hologram",
+      "id": "P24-02",
+      "title": "全息舱 · 线下设备展示",
+      "source": "原图\\P24\\P24-02.jpg",
+      "sourceSHA256": "05198d5a9c2b43fa58ed83fe4515ff8d1613d4bd708b446abe761e92572b4bc5",
+      "web": "assets/media/c09b9849399eeb5807f9.webp",
+      "bytes": 86244
+    },
+    {
+      "project": "hologram",
+      "id": "page-24",
+      "title": "数字人展示 · 原作品集说明",
+      "source": "页面预览\\page-24.jpg",
+      "sourceSHA256": "cfd070564072011ab817725d5498c6d25b69a254d0dbb893a4f17ebf3b0c5182",
+      "web": "assets/media/0d37ee95574dad0d80fc.webp",
+      "bytes": 32468
+    }
+  ]
+}

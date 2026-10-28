@@ -7,3 +7,5 @@
 *.css text eol=lf
 *.js text eol=lf
 *.md text eol=lf
+
+*.pdf -text
