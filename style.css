@@ -440,3 +440,19 @@ body[data-technology-hidden="true"] .portfolio-modules { grid-template-columns: 
 .works > .section-heading { flex-direction: column; align-items: flex-start; gap: 12px; margin-bottom: 28px; }
 .works > .section-heading > p { max-width: none; margin: 0; }
 .works > .section-heading .eyebrow { margin-bottom: 10px; }
+
+.evil-cast{margin:22px 0 6px}
+.evil-cast h3{font-size:13px;font-weight:550;margin:0 0 6px}
+.evil-cast-note{font-size:11px;color:var(--muted);margin:0 0 10px;line-height:1.6}
+.evil-cast-grid,.evil-boss-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:8px;margin:0 0 16px}
+.evil-cast-card{min-width:0;margin:0;background:#0b141f;border:1px solid #293e4c;border-radius:6px;overflow:hidden}
+.evil-cast-card .gif-preview,.evil-cast-screen .gif-preview{border-radius:0;background:#070d14}
+.evil-cast-card .gif-preview>img,.evil-cast-screen .gif-preview>img{width:100%;height:132px;aspect-ratio:auto;object-fit:contain;background:#070d14}
+.evil-cast-card figcaption,.evil-cast-card>p{font-size:11px;color:#b9c8d8;margin:0;padding:7px 8px 8px;line-height:1.4}
+.evil-cast-switch{display:flex;border-top:1px solid var(--line)}
+.evil-cast-switch button{flex:1;min-height:30px;border:0;background:transparent;color:var(--muted);font-size:11px}
+.evil-cast-switch button[aria-pressed=true]{color:var(--cyan);background:#1b2a36}
+@media (max-width:700px){
+  .evil-cast-grid,.evil-boss-grid{display:flex;overflow-x:auto}
+  .evil-cast-card{flex:0 0 112px}
+}
