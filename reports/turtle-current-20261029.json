@@ -1,0 +1,32 @@
+[
+  {
+    "key": "current-opening",
+    "source": "D:\\wly\\unity\\Turtle Soup\\Captures\\PortfolioInterfaces-20261027\\20261029-184230\\01-opening.png",
+    "url": "assets/media/turtle-20261029-current-opening.webp",
+    "title": "迷雾石屋 · 当前开场"
+  },
+  {
+    "key": "current-surface",
+    "source": "D:\\wly\\unity\\Turtle Soup\\Captures\\PortfolioCurrent-20261029\\surface.png",
+    "url": "assets/media/turtle-20261029-current-surface.webp",
+    "title": "汤面 · 四向叙事与插画"
+  },
+  {
+    "key": "current-discussion",
+    "source": "D:\\wly\\unity\\Turtle Soup\\Captures\\PortfolioCurrent-20261029\\discussion.png",
+    "url": "assets/media/turtle-20261029-current-discussion.webp",
+    "title": "共同讨论 · 八席操作与四向线索"
+  },
+  {
+    "key": "current-reveal",
+    "source": "D:\\wly\\unity\\Turtle Soup\\Captures\\RevealUI-v2\\reveal-v2-final.png",
+    "url": "assets/media/turtle-20261029-current-reveal.webp",
+    "title": "真相揭晓 · 五幕插画与四向阅读"
+  },
+  {
+    "key": "current-results",
+    "source": "D:\\wly\\unity\\Turtle Soup\\Captures\\ResultsPlaque-v1\\results-edge-layout.png",
+    "url": "assets/media/turtle-20261029-current-results.webp",
+    "title": "结算 · 四向墨石铜边铭板"
+  }
+]

@@ -456,3 +456,23 @@ body[data-technology-hidden="true"] .portfolio-modules { grid-template-columns: 
   .evil-cast-grid,.evil-boss-grid{display:flex;overflow-x:auto}
   .evil-cast-card{flex:0 0 112px}
 }
+
+.evil-scene-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:0 0 16px}
+.evil-scene-grid .gif-preview>img{width:100%;height:108px;aspect-ratio:auto;object-fit:contain;background:#070d14}
+@media (max-width:700px){
+  .evil-scene-grid{display:flex;overflow-x:auto}
+  .evil-scene-grid .evil-cast-card{flex:0 0 168px}
+}
+.hangzhou-motion{margin:18px 0 8px}
+.hangzhou-motion h3{font-size:13px;font-weight:550;margin:0 0 6px}
+.hangzhou-motion-note{font-size:11px;color:var(--muted);margin:0 0 10px;line-height:1.6}
+.hangzhou-motion-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0 0 16px}
+.hangzhou-motion-card{min-width:0;margin:0;background:#0b141f;border:1px solid #293e4c;border-radius:6px;overflow:hidden}
+.hangzhou-motion-card .gif-preview{border-radius:0;background:#070d14}
+.hangzhou-motion-card .gif-preview>img{width:100%;height:140px;aspect-ratio:auto;object-fit:contain;background:#070d14}
+.hangzhou-motion-card figcaption{font-size:11px;color:#b9c8d8;margin:0;padding:7px 8px 8px}
+@media (max-width:560px){.hangzhou-motion-grid{grid-template-columns:1fr}}
+
+/* Current Turtle Soup case study: keep single scene captures readable. */
+.turtle-topic .turtle-art-grid:has(> figure:only-child){grid-template-columns:1fr}
+@media(max-width:640px){.turtle-topic .turtle-art-grid{grid-template-columns:1fr}}

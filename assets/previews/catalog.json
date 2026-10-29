@@ -353,5 +353,88 @@
     "seconds": 6.13,
     "fps": 7.99,
     "title": "吸血鬼 · 攻击"
+  },
+  {
+    "name": "evil-scene-goblin",
+    "src": "assets/previews/5dea9effa3dfb9697ee8.gif",
+    "poster": "assets/previews/a09d46596db20f93f296.webp",
+    "bytes": 1741411,
+    "frames": 48,
+    "source": "EvilHero / Portfolio/MainScene/output/scenes/哥布林_整体场景.gif",
+    "start": 0,
+    "seconds": 6.01,
+    "fps": 7.99,
+    "title": "哥布林 · 整体场景"
+  },
+  {
+    "name": "evil-scene-robber",
+    "src": "assets/previews/a74fb5b58cddc57723b1.gif",
+    "poster": "assets/previews/06f43dd010015f975d5f.webp",
+    "bytes": 1738754,
+    "frames": 60,
+    "source": "EvilHero / Portfolio/MainScene/output/scenes/强盗_整体场景.gif",
+    "start": 0,
+    "seconds": 6.0,
+    "fps": 10.0,
+    "title": "强盗 · 整体场景"
+  },
+  {
+    "name": "evil-scene-vampire",
+    "src": "assets/previews/3db8ecf0706016fc8cd6.gif",
+    "poster": "assets/previews/c996f0d3d59828e5e349.webp",
+    "bytes": 840340,
+    "frames": 60,
+    "source": "EvilHero / Portfolio/MainScene/output/scenes/吸血鬼_整体场景.gif",
+    "start": 0,
+    "seconds": 6.0,
+    "fps": 10.0,
+    "title": "吸血鬼 · 整体场景"
+  },
+  {
+    "name": "evil-scene-dragon",
+    "src": "assets/previews/8f56dbf3f219d6e0ec5b.gif",
+    "poster": "assets/previews/47cfc8e2499bc85738ba.webp",
+    "bytes": 2039379,
+    "frames": 48,
+    "source": "EvilHero / Portfolio/MainScene/output/scenes/恶龙_整体场景.gif",
+    "start": 0,
+    "seconds": 6.01,
+    "fps": 7.99,
+    "title": "恶龙 · 环境场景"
+  },
+  {
+    "name": "hangzhou-expression",
+    "src": "assets/previews/7b0f33403fa28ff35a9c.gif",
+    "poster": "assets/previews/3eb7666781264bb2e950.webp",
+    "bytes": 584472,
+    "frames": 31,
+    "source": "杭城大亨 / output/作品集/杭城大亨/gifs/02-speech-and-expression.gif",
+    "start": 0,
+    "seconds": 3.1,
+    "fps": 10.0,
+    "title": "说话与表情"
+  },
+  {
+    "name": "hangzhou-cloth",
+    "src": "assets/previews/0292e65bebb1c9e42c42.gif",
+    "poster": "assets/previews/b411d36ed6158ec70a8d.webp",
+    "bytes": 385978,
+    "frames": 58,
+    "source": "杭城大亨 / output/作品集/杭城大亨/gifs/03-cloth-and-ambient.gif",
+    "start": 0,
+    "seconds": 5.8,
+    "fps": 10.0,
+    "title": "服饰与环境"
+  },
+  {
+    "name": "turtle-opening-current",
+    "title": "汤之馆 · 当前开场实录",
+    "src": "assets/previews/turtle-opening-20261029.gif",
+    "poster": "assets/previews/turtle-opening-20261029.webp",
+    "frames": 204,
+    "seconds": 34,
+    "fps": 6,
+    "bytes": 11255264,
+    "source": "D:\\wly\\unity\\Turtle Soup\\Captures\\OpeningGif-20261029"
   }
 ]
